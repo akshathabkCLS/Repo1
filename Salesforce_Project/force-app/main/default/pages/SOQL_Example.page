@@ -1,0 +1,20 @@
+<apex:page controller="SOQL_Example">
+    <apex:form >
+        <apex:pageBlock title="Accounts">
+            <apex:pageBlockTable value="{!accounts}" var="a">
+                <apex:column value="{!a.name}"/>
+                <apex:column value="{!a.phone}"/>
+                <apex:column value="{!a.Industry}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Contacts">
+            <apex:pageBlockTable value="{!contacts}" var="b">
+                <apex:column value="{!b.FirstName}"/>
+                <apex:column value="{!b.LastName}"/>
+                <apex:column value="{!b.Phone}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

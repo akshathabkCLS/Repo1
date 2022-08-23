@@ -1,0 +1,17 @@
+<apex:page controller="SOQL_Example3">
+    <apex:form >
+        Industry :  <apex:selectList size="1" value="{!selected}">
+                    <apex:selectOptions value="{!options}"/>
+        			<apex:actionSupport event="onchange" action="{!show}" reRender="one"/>
+                    </apex:selectList>
+        <br/> <br/>
+        
+        <apex:pageblock title="Accounts" id="one">
+            <apex:pageBlockTable value="{!accounts}" var="a">
+                <apex:column value="{!a.name}"/>
+                <apex:column value="{!a.industry}"/>
+                <apex:column value="{!a.phone}"/>
+            </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page controller="Select_examples">
+    <apex:form >
+        Cities : <apex:SelectList size="1">
+        <apex:selectOptions value="{!options}"/>
+        </apex:SelectList>
+        <br/> <br/>
+        
+        <apex:SelectList size="1">
+        <apex:selectOptions value="{!places}"/>
+        </apex:SelectList>
+        
+        
+    </apex:form>
+</apex:page>
