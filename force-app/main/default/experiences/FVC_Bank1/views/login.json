@@ -1,0 +1,64 @@
+{
+  "appPageId" : "68ac5037-dd94-4af7-a01d-fc96e488df6a",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "30140b37-a625-467c-a49f-2bc081bcc2cc",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "c2908121-06f2-4562-a687-03e41c213db0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"container\">\n    <div class=\"container-title\">Log on to the FVC Portal</div>\n    <p class=\"container-subtitle\">Welcome back! If you would like to continue a new application or edit an existing one, please login below.</p>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "39cac562-2118-44ff-8ea3-38fb9f54d58f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "customSelfRegisterUrl" : "",
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/s/login/ForgotPassword",
+        "includeShowHideIcon" : false,
+        "loginButtonLabel" : "Sign in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "",
+        "startUrl" : "",
+        "usernameLabel" : "Email Address"
+      },
+      "componentName" : "cl_portal:CLSLoginForm",
+      "id" : "b0e07b84-a0ae-4188-b0b8-79ac2a893088",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cbc283d1-f3b3-4e0e-81da-123013900180",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e93b1e26-584c-4245-b7c8-ce17041fedd3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5015024f-d8ed-4735-ab7d-62a6dfbb7275",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

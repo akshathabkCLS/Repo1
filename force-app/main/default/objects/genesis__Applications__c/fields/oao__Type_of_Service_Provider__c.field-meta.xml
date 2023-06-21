@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Type_of_Service_Provider__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field has the list of applicable service provider types.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field has the list of applicable service provider types.</inlineHelpText>
+    <label>Type of Service Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Funds management</fullName>
+                <default>false</default>
+                <label>Funds management</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Investment advisory</fullName>
+                <default>false</default>
+                <label>Investment advisory</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Notary</fullName>
+                <default>false</default>
+                <label>Notary</label>
+            </value>
+            <value>
+                <fullName>Real estate</fullName>
+                <default>false</default>
+                <label>Real estate</label>
+            </value>
+            <value>
+                <fullName>Tax preparation</fullName>
+                <default>false</default>
+                <label>Tax preparation</label>
+            </value>
+            <value>
+                <fullName>Trust management</fullName>
+                <default>false</default>
+                <label>Trust management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

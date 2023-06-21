@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Balloon_Payment_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is to describe the method to calculate balloon payments schedule</description>
+    <externalId>false</externalId>
+    <label>Balloon Payment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Balloon Amount Including Only Principal</fullName>
+                <default>false</default>
+                <label>Balloon Amount Including Only Principal</label>
+            </value>
+            <value>
+                <fullName>Balloon Amount Including Principal and Interest</fullName>
+                <default>false</default>
+                <label>Balloon Amount Including Principal and Interest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

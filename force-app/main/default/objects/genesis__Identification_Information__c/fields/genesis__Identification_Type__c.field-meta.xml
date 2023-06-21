@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Identification_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Define the identification information type, could be Drivers License, Passport etc.</description>
+    <externalId>false</externalId>
+    <label>Identification Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Drivers License</fullName>
+                <default>false</default>
+                <label>Drivers License</label>
+            </value>
+            <value>
+                <fullName>Military ID</fullName>
+                <default>false</default>
+                <label>Military ID</label>
+            </value>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+            <value>
+                <fullName>Permanent Resident Card</fullName>
+                <default>false</default>
+                <label>Permanent Resident Card</label>
+            </value>
+            <value>
+                <fullName>Tribal ID</fullName>
+                <default>false</default>
+                <label>Tribal ID</label>
+            </value>
+            <value>
+                <fullName>State ID</fullName>
+                <default>false</default>
+                <label>State ID</label>
+            </value>
+            <value>
+                <fullName>Alien ID Card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alien ID Card</label>
+            </value>
+            <value>
+                <fullName>Identification Card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Identification Card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

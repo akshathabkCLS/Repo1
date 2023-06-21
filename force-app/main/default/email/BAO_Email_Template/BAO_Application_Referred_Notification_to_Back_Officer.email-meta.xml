@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent to Back Officer when the application status is DENIED</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BAO Application Denied Notification to Back Officer</name>
+    <style>none</style>
+    <subject>Application Denied Email</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

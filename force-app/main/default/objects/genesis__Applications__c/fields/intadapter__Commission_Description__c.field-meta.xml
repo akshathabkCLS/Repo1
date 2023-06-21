@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__Commission_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This pertains to the commission chargeable to the Borrower or Customer for whom the Letter of Credit was established. The Commission could be stated as a percentage of an agreed base or as a fixed amount (the &quot;$&quot; sign should be included if this field will contain a fixed dollar amount).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This pertains to the commission chargeable to the Borrower or Customer for whom the Letter of Credit was established.</inlineHelpText>
+    <label>Commission Description</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

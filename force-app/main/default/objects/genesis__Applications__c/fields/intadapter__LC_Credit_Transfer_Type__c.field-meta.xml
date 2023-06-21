@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__LC_Credit_Transfer_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This pertains to the frequency of transfer permitted under the Letter of Credit. The Letter of Credit may have the following options: 0) Not transferable; 1) Transferable only once and only in its entirety to a transferee of the Note (Single Transfer) ; and 2) Transfer may be more than once but only in its entirety to a transferee of the Note (Multiple transfer).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This pertains to the frequency of transfer permitted under the Letter of Credit.</inlineHelpText>
+    <label>Credit Transfer Type for LC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Transferable</fullName>
+                <default>false</default>
+                <label>Not Transferable</label>
+            </value>
+            <value>
+                <fullName>Single Transfer</fullName>
+                <default>false</default>
+                <label>Single Transfer</label>
+            </value>
+            <value>
+                <fullName>Multiple Transfer</fullName>
+                <default>false</default>
+                <label>Multiple Transfer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

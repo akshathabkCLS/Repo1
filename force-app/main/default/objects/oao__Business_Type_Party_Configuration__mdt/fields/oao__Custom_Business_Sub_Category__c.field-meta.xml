@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Custom_Business_Sub_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enter business sub category here if it is not listed in Business Sub Category picklist.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Enter business sub category here if it is not listed in Business Sub Category picklist.</inlineHelpText>
+    <label>Custom Business Sub Category</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

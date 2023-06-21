@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Combines permission set:
+BAO Back Office Agent + BAO Back Office Agent User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>BAO Back Office</label>
+    <permissionSets>BAO_Back_Office_Agent</permissionSets>
+    <permissionSets>oao__BAO_Back_Office_Agent_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

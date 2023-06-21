@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__Charged_Fee_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This pertains to the fee chargeable to the Borrower or Customer for whom the Letter of Credit was established. This may be charged in addition to the commission charged by the Lender in relation to the Letter of Credit.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This pertains to the fee chargeable to the Borrower or Customer for whom the Letter of Credit was established. This may be charged in addition to the commission charged by the Lender in relation to the Letter of Credit.</inlineHelpText>
+    <label>Charged Fee Description</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

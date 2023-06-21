@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This mail is fired after the application is approved and OLB is not enabled</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BAO Olb Not Enabled Application Approval Email</name>
+    <style>none</style>
+    <subject>Your Business Account application has been approved!</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

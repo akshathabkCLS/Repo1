@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__LC_Receiving_Bank__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the bank that  will be receiving the documents required in Letter of Credit. The receiving or accepting bank could either be the: 1) Issuing Bank; 2) Confirming Bank; or 3) Advising Bank, defined under the Letter of Credit Agreement.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the bank that  will be receiving the documents required in Letter of Credit. The receiving or accepting bank could either be the: 1) Issuing Bank; 2) Confirming Bank; or 3) Advising Bank, defined under the Letter of Credit Agreement.</inlineHelpText>
+    <label>Letter of Credit Receiving Bank</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Issuing Bank</fullName>
+                <default>false</default>
+                <label>Issuing Bank</label>
+            </value>
+            <value>
+                <fullName>Advising Bank</fullName>
+                <default>false</default>
+                <label>Advising Bank</label>
+            </value>
+            <value>
+                <fullName>Confirming Bank</fullName>
+                <default>false</default>
+                <label>Confirming Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Credit_Policy_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field indicates consolidate decision of credit check for an application. Field gets updated when Credit Analysis Status for all (wherever credit is required) application parties is updated to Approved.</description>
+    <externalId>false</externalId>
+    <label>Credit Policy Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>solcommon__Process_Status</valueSetName>
+    </valueSet>
+</CustomField>

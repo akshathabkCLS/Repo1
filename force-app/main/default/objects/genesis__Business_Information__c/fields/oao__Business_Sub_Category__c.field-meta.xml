@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Business_Sub_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sub Category for the Business Category that the user has selected</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sub Category for the Business Category that the user has selected</inlineHelpText>
+    <label>Business Sub Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>genesis__Business_Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporation</fullName>
+                <default>false</default>
+                <label>Corporation</label>
+            </value>
+            <value>
+                <fullName>LLC</fullName>
+                <default>false</default>
+                <label>LLC</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+                <label>Sole Proprietorship</label>
+            </value>
+            <value>
+                <fullName>Non-Profit</fullName>
+                <default>false</default>
+                <label>Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Corp/Non-Profit</fullName>
+                <default>false</default>
+                <label>Corp/Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Public funds</fullName>
+                <default>false</default>
+                <label>Public funds</label>
+            </value>
+            <value>
+                <fullName>State/Pol Subdv</fullName>
+                <default>false</default>
+                <label>State/Pol Subdv</label>
+            </value>
+            <value>
+                <fullName>Other Dep Insti</fullName>
+                <default>false</default>
+                <label>Other Dep Insti</label>
+            </value>
+            <value>
+                <fullName>US Comm’l Banks</fullName>
+                <default>false</default>
+                <label>US Comm’l Banks</label>
+            </value>
+            <value>
+                <fullName>Foreign-Non Rpt</fullName>
+                <default>false</default>
+                <label>Foreign-Non Rpt</label>
+            </value>
+            <value>
+                <fullName>Organization</fullName>
+                <default>false</default>
+                <label>Organization</label>
+            </value>
+            <value>
+                <fullName>S Corporation</fullName>
+                <default>false</default>
+                <label>S Corporation</label>
+            </value>
+            <value>
+                <fullName>C Corporation</fullName>
+                <default>false</default>
+                <label>C Corporation</label>
+            </value>
+            <value>
+                <fullName>Non-Profit Corporation</fullName>
+                <default>false</default>
+                <label>Non-Profit Corporation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Partnership</controllingFieldValue>
+            <valueName>Partnership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sole Proprietorship</controllingFieldValue>
+            <valueName>Sole Proprietorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LLC</controllingFieldValue>
+            <valueName>LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporation</controllingFieldValue>
+            <valueName>S Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporation</controllingFieldValue>
+            <valueName>C Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit</controllingFieldValue>
+            <valueName>Non-Profit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

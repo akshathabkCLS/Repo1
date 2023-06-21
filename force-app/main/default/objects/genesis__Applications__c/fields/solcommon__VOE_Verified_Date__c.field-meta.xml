@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__VOE_Verified_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field should be populated with the date/time when the Application.VOE_Verified is updated to &apos;TRUE&apos;</description>
+    <externalId>false</externalId>
+    <label>VOE Verified Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

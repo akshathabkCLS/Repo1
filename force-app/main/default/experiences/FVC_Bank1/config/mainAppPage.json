@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "6a45a228-d033-4fab-a4dd-91a069d423dd",
+  "headMarkup" : "<link rel=\"shortcut icon\" href=\"/resource/oao__CobaltFabIcon\"/>",
+  "id" : "73a6baeb-33b8-4e7d-b51e-e5cbc22d346d",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : false,
+  "label" : "main",
+  "templateName" : "Starter Template",
+  "type" : "appPage"
+}

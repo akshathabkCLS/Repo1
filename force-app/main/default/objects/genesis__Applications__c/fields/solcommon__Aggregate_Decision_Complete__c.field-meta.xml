@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Aggregate_Decision_Complete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The flag signifies whether the Aggregate Decisioning has been done on this Application or not.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The flag signifies whether the Aggregate Decisioning has been done on this Application or not.</inlineHelpText>
+    <label>Aggregate Decision Complete</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

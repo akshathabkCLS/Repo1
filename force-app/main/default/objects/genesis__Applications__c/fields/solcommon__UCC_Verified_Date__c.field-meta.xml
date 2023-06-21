@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__UCC_Verified_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field has the date/time when the UCC was successfully verified.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date/time for successful UCC verification.</inlineHelpText>
+    <label>UCC Verified Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

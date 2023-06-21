@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__UCC_Verified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates whether the application is UCC Verified. This field should be set to &apos;TRUE&apos; when the UCC_Verified field on all applicable Parties is equal to &apos;TRUE&apos;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates whether the application is UCC Verified.</inlineHelpText>
+    <label>UCC Verified</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

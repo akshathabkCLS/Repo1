@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Combined permission set for:
+BAO Permission Set and BAO Community User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>BAO Community</label>
+    <permissionSets>BAO_Community_User</permissionSets>
+    <permissionSets>oao__BAO_Permission_Set</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Asset_Class_External_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field stores the External Id for Asset class of application.</description>
+    <externalId>false</externalId>
+    <formula>genesis__CL_Product__r.clcommon__Asset_Class__r.clcommon__External_ID__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field stores the External Id for Asset class of application.</inlineHelpText>
+    <label>Asset Class External Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

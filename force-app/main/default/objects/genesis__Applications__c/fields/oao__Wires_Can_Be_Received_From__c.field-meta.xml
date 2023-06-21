@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Wires_Can_Be_Received_From__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Wires Can Be Received from which countries.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Wires Can Be Received from which countries.</inlineHelpText>
+    <label>Wires Can Be Received From</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>q2adapters__Overall_Core_Booking_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field indicates the overall application created in core(Created account, contact and collateral).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates the overall application created in core(Created account, contact and collateral).</inlineHelpText>
+    <label>Overall Core Booking Status</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__LOC_Fixed_Payment_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field stores the fixed payment amount that is applicable when the &quot;LOC Payment Type&quot; has the following picklist values
+
+1) Fixed Amount Plus Accrued Interest
+2) Fixed Amount
+3) Fixed Amount per $1000 of Outstanding Balance
+4) Percentage of the Outstanding Balance Plus Accrued Interest
+5) Greater of Fixed Amount or Accrued Interest</description>
+    <externalId>false</externalId>
+    <label>LOC Fixed Payment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

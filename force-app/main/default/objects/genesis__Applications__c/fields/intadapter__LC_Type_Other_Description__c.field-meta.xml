@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__LC_Type_Other_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a specific documentation requirement (typically non-good related) for the Letter of Credit. This is typically used in a Stand by Letter of Credit where goods are not involved and specific documentation are required based on an occurrence of an event.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a specific documentation requirement (typically non-good related) for the Letter of Credit.</inlineHelpText>
+    <label>Letter of Credit:Other Type Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

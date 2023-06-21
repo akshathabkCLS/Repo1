@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Move_Across_Month__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field defines whether the schedule&apos;s due date should get moved across the month, if due date is lying on holiday.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field defines whether the schedule&apos;s due date should get moved across the month, if due date is lying on holiday.</inlineHelpText>
+    <label>Move Across Month</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

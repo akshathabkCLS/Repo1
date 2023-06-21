@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Collateral_Coverage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to display the amount covered by Collaterals.</description>
+    <externalId>false</externalId>
+    <formula>genesis__Advance_Value__c - genesis__Superior_Liens__c - IF(ISPICKVAL(genesis__Product_Type__c,&apos;LINE OF CREDIT&apos;) ,genesis__Credit_Limit__c,genesis__Loan_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is used to display the amount covered by Collaterals.</inlineHelpText>
+    <label>Collateral Coverage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

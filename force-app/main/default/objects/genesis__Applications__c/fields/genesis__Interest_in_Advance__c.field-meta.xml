@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Interest_in_Advance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field will determine if the Loan has an Interest in Advance facility</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will determine if the Loan has an Interest in Advance facility</inlineHelpText>
+    <label>Interest in Advance</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

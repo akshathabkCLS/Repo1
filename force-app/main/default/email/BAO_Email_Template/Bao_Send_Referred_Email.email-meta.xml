@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Decliend email after Back Office review</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BAO Send Declined Email</name>
+    <style>none</style>
+    <subject>{!$Setup.oao__Cobalt_Custom_Settings__c.oao__Company_Name__c} Application Update</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

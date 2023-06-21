@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Business_Account_Opening</fullName>
+    <columns>NAME</columns>
+    <columns>genesis__Account__c</columns>
+    <columns>genesis__Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>genesis__Product_Type__c</field>
+        <operation>contains</operation>
+        <value>PACKAGE</value>
+    </filters>
+    <label>Business Account Opening</label>
+</ListView>

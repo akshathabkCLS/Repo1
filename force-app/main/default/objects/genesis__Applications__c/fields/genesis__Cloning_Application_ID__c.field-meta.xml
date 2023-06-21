@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Cloning_Application_ID__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>To identify if it is a cloned application or not and what was cloning application id</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Application is cloned from this ID</inlineHelpText>
+    <label>Cloning Application ID</label>
+    <referenceTo>genesis__Applications__c</referenceTo>
+    <relationshipLabel>Applications (Cloning Application ID)</relationshipLabel>
+    <relationshipName>Application_clone</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

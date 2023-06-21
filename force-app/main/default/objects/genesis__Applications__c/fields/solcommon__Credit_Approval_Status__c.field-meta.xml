@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Credit_Approval_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field should be populated as follows:
+&apos;AUTO-APPROVE&apos; - The field should be set to &apos;AUTO-APPROVE&apos; if the Application.Credit_Rating value meets the minimum credit approval status.
+&apos;AUTO-DECLINE&apos; - The field should be set to &apos;AUTO-DECLINE&apos; if the Application.Credit_Rating value does not meet the minimum credit approval status.
+&apos;MANUAL REVIEW&apos; - The field should be set to &apos;MANUAL REVIEW&apos; if the Application.Credit_Rating value falls below automatic approval requirements but above automatic rejection requirements.</description>
+    <externalId>false</externalId>
+    <label>Credit Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AUTO-APPROVE</fullName>
+                <default>false</default>
+                <label>AUTO-APPROVE</label>
+            </value>
+            <value>
+                <fullName>AUTO-DECLINE</fullName>
+                <default>false</default>
+                <label>AUTO-DECLINE</label>
+            </value>
+            <value>
+                <fullName>MANUAL REVIEW</fullName>
+                <default>false</default>
+                <label>MANUAL REVIEW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

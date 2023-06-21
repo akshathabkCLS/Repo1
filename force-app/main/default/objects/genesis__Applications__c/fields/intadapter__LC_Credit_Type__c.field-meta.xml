@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__LC_Credit_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This refers to the type of credit availability under the Letter of Credit established in behalf of the Borrower or Customer. Credit may be made available to the beneficiary upon presentation of a: 1) Sight Draft which requires the Issuing Bank or Lender to pay the Beneficiary upon presentation of draft and required documents;  2) Time Draft which requires the Issuing Bank or Lender to pay the Beneficiary at a future date following presentation of draft and required documents; and 3) Other Lender/Issuing Bank specific credit availability for the Letter of Credit (freeform)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This refers to the type of credit availability under the Letter of Credit established in behalf of the Borrower or Customer.</inlineHelpText>
+    <label>Credit Type for Letter of Credit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sight Draft</fullName>
+                <default>false</default>
+                <label>Sight Draft</label>
+            </value>
+            <value>
+                <fullName>Time Draft</fullName>
+                <default>false</default>
+                <label>Time Draft</label>
+            </value>
+            <value>
+                <fullName>Other Lender specific Draft Type</fullName>
+                <default>false</default>
+                <label>Other Lender specific Draft Type</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

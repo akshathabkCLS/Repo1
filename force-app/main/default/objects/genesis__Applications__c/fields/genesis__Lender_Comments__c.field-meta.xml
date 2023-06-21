@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Lender_Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field will capture any additional observations that the lender may want to record on the application as part of adverse action</description>
+    <externalId>false</externalId>
+    <label>Lender Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

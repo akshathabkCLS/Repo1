@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Nature_of_Credit_Facility__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field determines if the credit facility is revolving or non-revolving in nature.</description>
+    <externalId>false</externalId>
+    <label>Nature of Credit Facility</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Revolving</fullName>
+                <default>false</default>
+                <label>Revolving</label>
+            </value>
+            <value>
+                <fullName>Non-Revolving</fullName>
+                <default>true</default>
+                <label>Non-Revolving</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

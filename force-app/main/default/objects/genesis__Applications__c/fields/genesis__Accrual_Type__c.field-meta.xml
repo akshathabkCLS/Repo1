@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Accrual_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Accrual To Date - If the user selects &quot;Accrual To Date&quot; on the contract, it would mean that the interest amount that would get posted on an IPD would be equal to the amount accrued till the previous date.
+        Accrual Through Date - If the user selects &quot;Accrual Through Date&quot; on the contract, it would mean that that the interest amount that would get posted on an IPD would be equal to the amount accrued till that date.</description>
+    <externalId>false</externalId>
+    <label>Accrual Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accrual To Date</fullName>
+                <default>false</default>
+                <label>Accrual To Date</label>
+            </value>
+            <value>
+                <fullName>Accrual Through Date</fullName>
+                <default>false</default>
+                <label>Accrual Through Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

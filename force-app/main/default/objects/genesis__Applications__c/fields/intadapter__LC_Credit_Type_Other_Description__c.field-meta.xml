@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intadapter__LC_Credit_Type_Other_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This pertains to a Lender (Issuing) Bank specific credit availability allowed under the Letter of Credit terms and will be applied if a sight draft or time draft is not applicable.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This pertains to a Lender (Issuing) Bank specific credit availability allowed under the Letter of Credit terms.</inlineHelpText>
+    <label>LC:Other Credit Type Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

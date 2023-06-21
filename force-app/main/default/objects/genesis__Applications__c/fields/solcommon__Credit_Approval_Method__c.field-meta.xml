@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Credit_Approval_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field should be populated as follows:
+&apos;AUTO-DECISION&apos; - The field should be set to &apos;AUTO-DECISION&apos; if Credit Approval was achieved automatically.
+&apos;MANUAL&apos; - The field should be set to &apos;MANUAL&apos; if Credit Approval was achieved by initiating an Approval Process.</description>
+    <externalId>false</externalId>
+    <label>Credit Approval Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AUTO-DECISION</fullName>
+                <default>false</default>
+                <label>AUTO-DECISION</label>
+            </value>
+            <value>
+                <fullName>MANUAL</fullName>
+                <default>false</default>
+                <label>MANUAL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

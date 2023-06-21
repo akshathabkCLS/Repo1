@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oao__Business_Person_Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Business Person Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EmailAndIdentity</fullName>
+                <default>true</default>
+                <label>EmailAndIdentity</label>
+            </value>
+            <value>
+                <fullName>PersonalInformationIdentification</fullName>
+                <default>false</default>
+                <label>PersonalInformationIdentification</label>
+            </value>
+            <value>
+                <fullName>DocumentUpload</fullName>
+                <default>false</default>
+                <label>DocumentUpload</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

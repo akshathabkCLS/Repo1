@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Credit_Approval_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field should be populated with the date/time when Credit Approval is achieved for a specific Application.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field should be populated with the date/time when Credit Approval is achieved for a specific Application.</inlineHelpText>
+    <label>Credit Approval Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>solcommon__Credit_Analysis_Initiated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates if Credit Analysis process has been initiated or not.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if Credit Analysis process has been initiated or not.</inlineHelpText>
+    <label>Credit Analysis Initiated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

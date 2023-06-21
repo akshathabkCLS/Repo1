@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>genesis__Interface_Contract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This field references to the interface contract.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field references to the interface contract.</inlineHelpText>
+    <label>Interface Contract</label>
+    <referenceTo>staging__Interface_Contract__c</referenceTo>
+    <relationshipLabel>Review Applications</relationshipLabel>
+    <relationshipName>Review_Applications</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

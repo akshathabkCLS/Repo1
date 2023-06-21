@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Back officer gets the notification when the application is Denied.</description>
+        <name>Application_Referred_Notification_to_Back_Officer</name>
+        <label>Application Referred Notification to Back Officer</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>genesis__Applications__c.Email_For_Referred_Application_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <description>When the application status is changed to DENIED then this flow will fire a Application Denied Email to Back Officer.</description>
+    <environments>Default</environments>
+    <interviewLabel>BAO Application Referred Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BAO Application Denied Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Application_Referred_Notification_to_Back_Officer</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>1 AND 2 AND 3</filterLogic>
+        <filters>
+            <field>genesis__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>DENIED</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>oao__Portal_Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ApplicationReferredToView</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>oao__Application_Referred_Due_to_Compliance__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>genesis__Applications__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
