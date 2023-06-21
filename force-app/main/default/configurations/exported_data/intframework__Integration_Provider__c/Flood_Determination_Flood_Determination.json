@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "Flood Determination",
+     "intframework__Activator_Class_Name__c": "intadapter.ServiceLinkProviderActivator",
+     "intframework__Active__c": false,
+     "intframework__External_Id__c": "Flood_Determination_Flood_Determination",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Flood_Determination"
+     },
+     "intframework__Product_Name__c": "Flood Determination",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "Flood Determination Systems",
+     "intframework__Release_Checksum__c": "081e62d4a4d4949d9e503a64076c29dd674f707717a6033f511fe0541e8d2c1d",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

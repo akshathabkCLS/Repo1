@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Limited Liability Company",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "f7bef63746859f15a80d4bdc24ba1fe59db84dd789dbb7d16b87744d7d75b5ee",
+     "genesis__External_Id__c": "Limited_Liability_Company",
+     "solcommon__Release_Checksum__c": null
+}

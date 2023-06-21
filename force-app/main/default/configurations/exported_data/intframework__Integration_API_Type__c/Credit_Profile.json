@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Credit Profile",
+     "intframework__External_Id__c": "Credit_Profile",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Consumer_Credit"
+     },
+     "intframework__Release_Checksum__c": "6216390579086d7b875f5f808abed1655773aa47d950ac2ff2c2e9e8b132e334",
+     "solcommon__Release_Checksum__c": null
+}

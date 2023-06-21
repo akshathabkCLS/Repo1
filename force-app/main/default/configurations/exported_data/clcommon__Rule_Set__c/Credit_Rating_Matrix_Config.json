@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "Credit Rating Matrix Config",
+     "clcommon__External_ID__c": "Credit_Rating_Matrix_Config",
+     "clcommon__Function__c": null,
+     "clcommon__Logging_Enabled__c": false,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "e6f5c4d98b529a6cba2891135e60aaf466fb50723bcd23d9e61b6a8e7f785dc4",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

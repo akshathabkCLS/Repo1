@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Get Enhanced Balance Sheet Statement",
+     "intframework__External_Id__c": "Get_Enhanced_Balance_Sheet_Statement",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Accounting_Data"
+     },
+     "intframework__Release_Checksum__c": "2685c9d9034f254e3a34450a8fc38470d68ef3bc542c43584e59d17362f9dcef",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Configuration__c"
+     },
+     "Name": "TabaPay Funding Config",
+     "intframework__Authentication_Named_Credential__c": "TabaPay",
+     "intframework__External_Id__c": "TabaPay_Funding_Config",
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "TabaPay"
+     },
+     "intframework__Release_Checksum__c": "41cd6279580e0b98dedd25f38318e623f0607170573cd6a86871946a03714f43",
+     "intframework__Top_Level_UI_Page_Name__c": null,
+     "intframework__Top_Level_UI_Page_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

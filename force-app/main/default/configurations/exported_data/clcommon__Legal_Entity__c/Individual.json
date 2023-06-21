@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Individual",
+     "clcommon__Individual__c": true,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "2ff5cb835ee7be61bfc985da79b1706a9c2b27aa22007d5a9e6cac7482da36ad",
+     "genesis__External_Id__c": "Individual",
+     "solcommon__Release_Checksum__c": null
+}

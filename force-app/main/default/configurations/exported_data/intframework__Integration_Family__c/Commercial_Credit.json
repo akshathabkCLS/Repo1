@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Commercial Credit",
+     "intframework__External_Id__c": "Commercial_Credit",
+     "intframework__Release_Checksum__c": "0ab449feb454e59a959f50b219219f94d083b6b72eea464cb01f4fff7042a3f4",
+     "solcommon__Release_Checksum__c": null
+}

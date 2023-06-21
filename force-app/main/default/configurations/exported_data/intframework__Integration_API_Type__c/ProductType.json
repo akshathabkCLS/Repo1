@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "ProductType",
+     "intframework__External_Id__c": "ProductType",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "AOGroService"
+     },
+     "intframework__Release_Checksum__c": "f70a71158715080b9e7e2ecce4f2b9d8d30d1e145856a2c338c28f9e587cc34f",
+     "solcommon__Release_Checksum__c": null
+}

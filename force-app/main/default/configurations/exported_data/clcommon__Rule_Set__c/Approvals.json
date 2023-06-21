@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "Approvals",
+     "clcommon__External_ID__c": "Approvals",
+     "clcommon__Function__c": "Approvals",
+     "clcommon__Logging_Enabled__c": false,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "911996e22a035b79a92d28e0ae84fd273cc79d8a5b9914fa5375a0f7499872fd",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

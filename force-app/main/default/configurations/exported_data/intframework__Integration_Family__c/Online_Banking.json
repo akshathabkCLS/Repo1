@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Online Banking",
+     "intframework__External_Id__c": "Online_Banking",
+     "intframework__Release_Checksum__c": "724f6839527cc41122e6a5fe996e64f65efa999116207f772a2c5162410fb440",
+     "solcommon__Release_Checksum__c": null
+}

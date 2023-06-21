@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Collateral_Type__c"
+     },
+     "Name": "Trailer",
+     "clcommon__Advance_Rate__c": null,
+     "clcommon__Collateral_Type_Code__c": null,
+     "clcommon__External_ID__c": "Trailer",
+     "clcommon__Itemized_Collateral_Values__c": false,
+     "clcommon__Release_Checksum__c": "b80d01b5915b4ca2dd0ed5d00a2b4771af473cb1e6c64f8125c203e450f9406c",
+     "intdm__KBB_valuation_applicable__c": false,
+     "solcommon__Release_Checksum__c": null
+}

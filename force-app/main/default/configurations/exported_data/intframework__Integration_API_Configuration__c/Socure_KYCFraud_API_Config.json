@@ -1,0 +1,655 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "Socure KYC-Fraud API Config",
+     "intframework__API_Endpoint__c": null,
+     "intframework__API_Named_Credential__c": "Socure_KYC",
+     "intframework__Adapter_Class_Name__c": "intadapter.SocureKYCAdapter",
+     "intframework__Additional_Header_Parameters__c": {
+          "Authorization": "SocureApiKey 8d255fdc-befb-470f-b530-5daffd4048b1"
+     },
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "Socure_KYCFraud_API_Config",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "KYC_Fraud"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "Socure_Config"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "KYC"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "Socure"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 1,
+     "intframework__Release_Checksum__c": "eb80c06bec8d1ef4d3ac0fa79f2483cba4c87b83fb8ffdbbc4d8fafd532ba0b4",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "Socure",
+               "useRequestGenerator": true,
+               "staticParameters": [
+                    {
+                         "externalField": "modules",
+                         "value": "kyc,fraud"
+                    },
+                    {
+                         "externalField": "DecisionModuleRequired",
+                         "value": "Yes"
+                    }
+               ],
+               "filters": [
+                    {
+                         "objectAPI": "Contact",
+                         "objectAlias": "ContactDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "firstName",
+                                   "fieldAPI": "FirstName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "surName",
+                                   "fieldAPI": "LastName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "email",
+                                   "fieldAPI": "Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "mobileNumber",
+                                   "fieldAPI": "oao__Formatted_Mobile__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "nationalId",
+                                   "fieldAPI": "ints__Social_Security_Number__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "dob",
+                                   "fieldAPI": "Birthdate"
+                              },
+                              {
+                                   "externalField": "country",
+                                   "fieldAPI": "OtherCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "zip",
+                                   "fieldAPI": "OtherPostalCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "state",
+                                   "fieldAPI": "OtherStateCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "city",
+                                   "fieldAPI": "OtherCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "physicalAddress",
+                                   "fieldAPI": "OtherStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "physicalAddress2",
+                                   "fieldAPI": "oao__Other_Address_Second_Line__c"
+                              }
+                         ],
+                         "whereClause": "Id = :borrowerId"
+                    }
+               ]
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "True",
+               "PublishAsJSON": "True"
+          },
+          "DMLOperations": [
+               {
+                    "dmlOperation": "Insert",
+                    "objectMappings": [
+                         {
+                              "objectAPI": "intdm__KYC_Fraud__c",
+                              "externalObject": "",
+                              "fields": [
+                                   {
+                                        "fieldAPI": "intdm__Account__c",
+                                        "externalField": "#accountId"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Vendor__c",
+                                        "defaultValue": "Socure"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Product__c",
+                                        "defaultValue": "KYC"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Reference_ID__c",
+                                        "externalField": "referenceId"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Fraud_Risk_Score_Percentile__c",
+                                        "externalField": "fraud.scores[0].score"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__DOB_Mismatch_Indicator__c",
+                                        "externalField": "kyc.fieldValidations.dob",
+                                        "evaluationExpression": "ISNULL($kyc.fieldValidations.dob) ? false : !($kyc.fieldValidations.dob == 0.99)"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__SSN_Discrepancy_Indicator__c",
+                                        "externalField": "kyc.fieldValidations.ssn",
+                                        "evaluationExpression": "ISNULL($kyc.fieldValidations.ssn) ? false : !($kyc.fieldValidations.ssn == 0.99)"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Phone_Number_Mismatch_Indicator__c",
+                                        "externalField": "kyc.fieldValidations.mobileNumber",
+                                        "evaluationExpression": "ISNULL($kyc.fieldValidations.mobileNumber) ? false : !($kyc.fieldValidations.mobileNumber == 0.99)"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Name_Mismatch_Indicator__c",
+                                        "externalField": "kyc.fieldValidations.firstName",
+                                        "evaluationExpression": "!($kyc.fieldValidations.firstName == 0.99) or !($kyc.fieldValidations.surName == 0.99)"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Address_Discrepancy_Indicator__c",
+                                        "externalField": "kyc.fieldValidations.streetAddress",
+                                        "evaluationExpression": "!($kyc.fieldValidations.streetAddress == 0.99) or !($kyc.fieldValidations.city == 0.99) or !($kyc.fieldValidations.zip == 0.99) or !($kyc.fieldValidations.state == 0.99)"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Reported_Deceased_Indicator__c",
+                                        "externalField": "kyc.reportedDeceasedIndicator"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Thin_File_Indicator__c",
+                                        "externalField": "kyc.thinFileIndicator"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__OFAC_Indicator__c",
+                                        "externalField": "globalWatchlist.OFACIndicator"
+                                   },
+                                   {
+                                        "fieldAPI": "intdm__Global_Watchlist_Indicator__c",
+                                        "externalField": "globalWatchlist.globalWatchlistIndicator"
+                                   }
+                              ],
+                              "Children": [
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.fraud.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.fraud.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.fraud.decision) ? null : 'Fraud Assessment'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.kyc.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.kyc.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.kyc.decision) ? null : 'KYC Result'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.namephonecorrelation.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.namephonecorrelation.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.namephonecorrelation.decision) ? null : 'Name Phone Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.watchlistpremier.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.watchlistpremier.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.watchlistpremier.decision) ? null : 'Watch List'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.addressrisk.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.addressrisk.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.addressrisk.decision) ? null : 'Address Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.phonerisk.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.phonerisk.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.phonerisk.decision) ? null : 'Phone Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.emailrisk.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.emailrisk.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.emailrisk.decision) ? null : 'Email Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.nameemailcorrelation.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.nameemailcorrelation.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.nameemailcorrelation.decision) ? null : 'Name Email Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "details.nameaddresscorrelation.decision",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "details.nameaddresscorrelation.decision",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($details.nameaddresscorrelation.decision) ? null : 'Name Address Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Recommendations__c",
+                                                  "externalObject": "decision",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "value",
+                                                            "fieldAPI": "intdm__Recommendation__c"
+                                                       },
+                                                       {
+                                                            "externalField": "value",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($value) ? null : 'Overall Result'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Risk__c",
+                                                  "externalObject": "reasonCodes",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "code",
+                                                            "fieldAPI": "intdm__Risk_Score_Reason_Code__c"
+                                                       },
+                                                       {
+                                                            "externalField": "description",
+                                                            "fieldAPI": "intdm__Risk_Score_Reason_Description__c"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "nameAddressCorrelation",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Name Address Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "nameEmailCorrelation",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Name Email Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "namePhoneCorrelation",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Name Phone Correlation'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "fraud",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "scores[0].score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "scores[0].score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($scores) ? null : 'Fraud Risk Score Percentile'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "emailRisk",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Email Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "phoneRisk",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Phone Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   },
+                                   {
+                                        "objectMappings": [
+                                             {
+                                                  "objectAPI": "intdm__Score__c",
+                                                  "externalObject": "addressRisk",
+                                                  "fields": [
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Score_Percentile_Ranking__c"
+                                                       },
+                                                       {
+                                                            "externalField": "score",
+                                                            "fieldAPI": "intdm__Type__c",
+                                                            "evaluationExpression": "ISNULL($score) ? null : 'Address Risk'"
+                                                       }
+                                                  ],
+                                                  "relationshipFields": [
+                                                       {
+                                                            "relation": "intdm__KYC_Fraud__c"
+                                                       }
+                                                  ]
+                                             }
+                                        ]
+                                   }
+                              ]
+                         }
+                    ]
+               }
+          ]
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": "KYCHome",
+     "intframework__UI_Page_Type__c": "SKUID",
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}

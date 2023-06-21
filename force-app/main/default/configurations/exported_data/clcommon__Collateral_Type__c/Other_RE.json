@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Collateral_Type__c"
+     },
+     "Name": "Other RE",
+     "clcommon__Advance_Rate__c": null,
+     "clcommon__Collateral_Type_Code__c": null,
+     "clcommon__External_ID__c": "Other_RE",
+     "clcommon__Itemized_Collateral_Values__c": false,
+     "clcommon__Release_Checksum__c": "a6b11aa11beae4b3d24892aa321bdc578fad6724254d938ee20696a95e871aec",
+     "intdm__KBB_valuation_applicable__c": false,
+     "solcommon__Release_Checksum__c": null
+}

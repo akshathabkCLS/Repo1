@@ -1,0 +1,296 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "Online Banking Enrollment Config",
+     "intframework__API_Endpoint__c": "/v1/CLS/Enrollment",
+     "intframework__API_Named_Credential__c": "OnlineBanking",
+     "intframework__Adapter_Class_Name__c": "intadapter.OLBEnrollmentAdapter",
+     "intframework__Additional_Header_Parameters__c": null,
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "Online_Banking_Enrollment_Config",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "Enrollment"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "Online_Banking_Config"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Online_Banking"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "Q2_OLB"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 0,
+     "intframework__Release_Checksum__c": "9e31c1b52beced4ac35975be36a4bb2eb2c3d19c3c523b70bdff3bb376923f8e",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "OnlineBanking",
+               "useRequestGenerator": true,
+               "dynamicDataParameters": [],
+               "filters": [
+                    {
+                         "objectAPI": "Account",
+                         "objectAlias": "customer",
+                         "fields": [
+                              {
+                                   "externalField": "name",
+                                   "fieldAPI": "Name",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "taxId",
+                                   "fieldAPI": "genesis__Business_Information__r.genesis__Tax_Identification_Number__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "cif",
+                                   "fieldAPI": "clcommon__CIF__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "objectAlias": "customer$$contactInfo$$phone[]",
+                                   "externalField": "phoneNumber",
+                                   "fieldAPI": "Phone",
+                                   "isMandatory": true
+                              }
+                         ],
+                         "whereClause": "Id = :customerAccountId"
+                    },
+                    {
+                         "objectAPI": "clcommon__Address__c",
+                         "objectAlias": "customer$$contactInfo$$address",
+                         "fields": [
+                              {
+                                   "externalField": "street1",
+                                   "fieldAPI": "clcommon__Street_Address__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "street2",
+                                   "fieldAPI": "clcommon__Address_Line_2__c"
+                              },
+                              {
+                                   "externalField": "city",
+                                   "fieldAPI": "clcommon__City__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "state",
+                                   "fieldAPI": "clcommon__State_Province_Code__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "zip",
+                                   "fieldAPI": "clcommon__Zip_Code__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "country",
+                                   "fieldAPI": "clcommon__Country__c"
+                              }
+                         ],
+                         "whereClause": "clcommon__Account__c = :customerAccountId AND clcommon__Billing_Address__c = true"
+                    },
+                    {
+                         "objectAPI": "Contact",
+                         "objectAlias": "users[]",
+                         "childReferenceFieldAlias": "contactId",
+                         "fields": [
+                              {
+                                   "externalField": "firstName",
+                                   "fieldAPI": "FirstName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "middleName",
+                                   "fieldAPI": "MiddleName"
+                              },
+                              {
+                                   "externalField": "lastName",
+                                   "fieldAPI": "LastName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "ssn",
+                                   "fieldAPI": "ints__Social_Security_Number__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "dob",
+                                   "fieldAPI": "Birthdate",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "login$$loginName",
+                                   "fieldAPI": "Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "objectAlias": "users[]$$contactInfo$$phone[]",
+                                   "externalField": "phoneNumber",
+                                   "fieldAPI": "MobilePhone",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "objectAlias": "users[]$$contactInfo$$email[]",
+                                   "externalField": "emailAddress",
+                                   "fieldAPI": "Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "contactId",
+                                   "fieldAPI": "Id",
+                                   "ignoreInRequest": true
+                              }
+                         ],
+                         "whereClause": "Id = :userContactId"
+                    },
+                    {
+                         "objectAPI": "clcommon__Address__c",
+                         "objectAlias": "users[0]$$contactInfo$$address[]",
+                         "referencesToObjectAlias": "users[]",
+                         "parentReferenceFieldAlias": "contactId",
+                         "fields": [
+                              {
+                                   "externalField": "street1",
+                                   "fieldAPI": "clcommon__Street_Address__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "street2",
+                                   "fieldAPI": "clcommon__Address_Line_2__c"
+                              },
+                              {
+                                   "externalField": "city",
+                                   "fieldAPI": "clcommon__City__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "state",
+                                   "fieldAPI": "clcommon__State_Province_Code__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "zip",
+                                   "fieldAPI": "clcommon__Zip_Code__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "country",
+                                   "fieldAPI": "clcommon__Country__c"
+                              }
+                         ],
+                         "whereClause": "clcommon__Contact__c = :userContactId AND clcommon__Mailing_Address__c = true"
+                    },
+                    {
+                         "objectAPI": "intadapter__OLB_Custom_Settings__c",
+                         "objectAlias": "OLBCustomSettings",
+                         "fields": [
+                              {
+                                   "externalField": "groupId",
+                                   "objectAlias": "customer",
+                                   "fieldAPI": "intadapter__OLB_GroupId__c",
+                                   "isMandatory": true
+                              }
+                         ],
+                         "whereClause": "Id = :customSettingsId"
+                    }
+               ],
+               "staticParameters": [
+                    {
+                         "externalField": "customer$$isCompany",
+                         "value": "true"
+                    },
+                    {
+                         "externalField": "customer$$contactInfo$$address$$iSoA3CountryCode",
+                         "value": "USA"
+                    },
+                    {
+                         "externalField": "customer$$contactInfo$$address$$province",
+                         "value": ""
+                    },
+                    {
+                         "externalField": "users[0]$$isAdmin",
+                         "value": "true"
+                    },
+                    {
+                         "externalField": "users[0]$$contactInfo$$address[0]$$iSoA3CountryCode",
+                         "value": "USA"
+                    },
+                    {
+                         "externalField": "users[0]$$contactInfo$$phone[0]$$type",
+                         "value": "home"
+                    },
+                    {
+                         "externalField": "users[0]$$contactInfo$$address[0]$$type",
+                         "value": "home"
+                    },
+                    {
+                         "externalField": "province",
+                         "value": ""
+                    },
+                    {
+                         "externalField": "customer$$contactInfo$$address$$type",
+                         "value": "business"
+                    },
+                    {
+                         "externalField": "customer$$contactInfo$$phone[0]$$type",
+                         "value": "home"
+                    }
+               ]
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "True",
+               "PublishAsJSON": "True"
+          },
+          "DMLOperations": [
+               {
+                    "dmlOperation": "Update",
+                    "objectMappings": [
+                         {
+                              "objectAPI": "Account",
+                              "fields": [
+                                   {
+                                        "externalField": "isUserEnrolled",
+                                        "fieldAPI": "intadapter__User_Enrolled__c"
+                                   }
+                              ],
+                              "whereClause": "Id = :userAccountId"
+                         }
+                    ]
+               }
+          ]
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": null,
+     "intframework__UI_Page_Type__c": null,
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}

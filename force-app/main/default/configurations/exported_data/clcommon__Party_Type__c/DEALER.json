@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "DEALER",
+     "clcommon__External_ID__c": "DEALER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "45c90a71e1f21f36fef03f312742a517b91f822ec78493817428387a295189d1",
+     "clcommon__Role__c": "Vendor",
+     "solcommon__Release_Checksum__c": null
+}

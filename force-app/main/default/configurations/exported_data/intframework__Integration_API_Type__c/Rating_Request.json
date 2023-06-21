@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Rating Request",
+     "intframework__External_Id__c": "Rating_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Business_Risk"
+     },
+     "intframework__Release_Checksum__c": "0510236e9805b01f1a035fe79be5014e6118a84bc04b0d031ab494442ed3e21d",
+     "solcommon__Release_Checksum__c": null
+}

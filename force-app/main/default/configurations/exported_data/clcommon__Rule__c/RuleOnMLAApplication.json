@@ -1,0 +1,169 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "RuleOnMLAApplication",
+     "clcommon__Document_Definition__r": null,
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "RuleOnMLAApplication",
+     "clcommon__Object_Type__c": "genesis__applications__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "3b9e7b9c43f36163f8e163fc15f0ba4cd7d05aaa4f3c6c7fa1c2f62b515f04c4",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": null,
+          "successMessage": "Success",
+          "successActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.ApplicationComplianceInfoAction",
+                    "additionalParams": "{\"genesis__Covered_Under_MLA__c\":true}",
+                    "actionName": "SuccessActionForMLAApplication"
+               }
+          ],
+          "sObjectName": "",
+          "saveRuleClass": null,
+          "ruleName": "RuleOnMLAApplication",
+          "priority": null,
+          "parentRuleID": null,
+          "parentRecordId": null,
+          "objectType": "genesis__applications__c",
+          "failureMessage": "Failure",
+          "failureActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.ApplicationComplianceInfoAction",
+                    "additionalParams": "{\"genesis__Covered_Under_MLA__c\":false}",
+                    "actionName": "FailureActionForMLAApplication"
+               }
+          ],
+          "externalId": null,
+          "executeActions": null,
+          "evaluationExpression": "$1 && $2 && $3 && $4 && $5 || $6",
+          "enabled": null,
+          "criteria": [
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "genesis__applications__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "true",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "BOOLEAN",
+                    "fieldName": "Covered under MLA",
+                    "fieldAPIName": "genesis__cl_product__r.clcommon__Covered_under_MLA__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$2",
+                    "relatedObject": "clcommon__Party__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "Active Duty",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Military Status",
+                    "fieldAPIName": "clcommon__contact__r.clcommon__Service_Member_Military_Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$3",
+                    "relatedObject": "genesis__applications__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "APPROVED - CONVERTED TO CONTRACT",
+                    "matchingType": "!=",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Status",
+                    "fieldAPIName": "genesis__Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$4",
+                    "relatedObject": "genesis__applications__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "REJECTED",
+                    "matchingType": "!=",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Status",
+                    "fieldAPIName": "genesis__Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$5",
+                    "relatedObject": "clcommon__Party__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "Service Member",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Military Relationship",
+                    "fieldAPIName": "clcommon__contact__r.clcommon__Military_Relationship__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$6",
+                    "relatedObject": "clcommon__Party__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "Service Member Dependent",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Military Relationship",
+                    "fieldAPIName": "clcommon__contact__r.clcommon__Military_Relationship__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               }
+          ],
+          "category": "ApplicationRules",
+          "abortQueueExecutionOnFailure": null
+     },
+     "clcommon__Rule_Priority__c": null,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "ApplicationRules"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

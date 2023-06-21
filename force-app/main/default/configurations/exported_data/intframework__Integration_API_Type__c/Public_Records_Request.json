@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Public Records Request",
+     "intframework__External_Id__c": "Public_Records_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Business_Risk"
+     },
+     "intframework__Release_Checksum__c": "462893f564893976f4cda596a7ca662afa4f4596a7aa0507fc6869efa212e667",
+     "solcommon__Release_Checksum__c": null
+}

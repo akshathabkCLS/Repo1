@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "GUARANTOR",
+     "clcommon__External_ID__c": "GUARANTOR",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "f362edad8b6d5d4e975219ed03823cb42601ccca3751784d06ac6e7d88ac1c62",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

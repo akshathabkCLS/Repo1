@@ -1,0 +1,99 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "DirectFailoverCheck",
+     "clcommon__Document_Definition__r": null,
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "DirectFailoverCheck",
+     "clcommon__Object_Type__c": "intframework__Integration_Response__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "2f120cf836563250d78467e239db87592512f75ca4ee7b5bbf483ff974e95f28",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": null,
+          "successMessage": "Rule Evaluation Passed for rule : DirectFailoverCheck",
+          "successActions": [],
+          "sObjectName": "",
+          "saveRuleClass": null,
+          "ruleName": "DirectFailoverCheck",
+          "priority": 1,
+          "parentRuleID": null,
+          "parentRecordId": null,
+          "objectType": "intframework__Integration_Response__c",
+          "failureMessage": "Rule Evaluation Failed for rule : DirectFailoverCheck",
+          "failureActions": [],
+          "externalId": null,
+          "executeActions": true,
+          "evaluationExpression": "$1||$2||$3",
+          "enabled": null,
+          "criteria": [
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "intframework__Integration_Response__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "500",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "INTEGER",
+                    "fieldName": "Third Party Http Code",
+                    "fieldAPIName": "intframework__Third_Party_Http_Code__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$2",
+                    "relatedObject": "intframework__Integration_Response__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "404",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "INTEGER",
+                    "fieldName": "Third Party Http Code",
+                    "fieldAPIName": "intframework__Third_Party_Http_Code__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$3",
+                    "relatedObject": "intframework__Integration_Response__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "508",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "INTEGER",
+                    "fieldName": "Third Party Http Code",
+                    "fieldAPIName": "intframework__Third_Party_Http_Code__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               }
+          ],
+          "category": "ConsumerCreditRuleSet",
+          "abortQueueExecutionOnFailure": true
+     },
+     "clcommon__Rule_Priority__c": 1,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "ConsumerCreditRuleSet"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

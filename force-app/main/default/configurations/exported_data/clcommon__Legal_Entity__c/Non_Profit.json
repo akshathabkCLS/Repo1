@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Non-Profit",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "2a5b43ae3e23d7d62fab62bb661a438a0603c3ed153a3bb7e16d07f5715b8ddb",
+     "genesis__External_Id__c": "Non_Profit",
+     "solcommon__Release_Checksum__c": null
+}

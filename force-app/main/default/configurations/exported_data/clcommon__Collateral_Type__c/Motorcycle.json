@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Collateral_Type__c"
+     },
+     "Name": "Motorcycle",
+     "clcommon__Advance_Rate__c": null,
+     "clcommon__Collateral_Type_Code__c": null,
+     "clcommon__External_ID__c": "Motorcycle",
+     "clcommon__Itemized_Collateral_Values__c": false,
+     "clcommon__Release_Checksum__c": "93a21559deffab37d175ded9aefcfa65b8753798cff52d62f27aa5d132c51471",
+     "intdm__KBB_valuation_applicable__c": false,
+     "solcommon__Release_Checksum__c": null
+}

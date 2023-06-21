@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Viability Request",
+     "intframework__External_Id__c": "Viability_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Business_Risk"
+     },
+     "intframework__Release_Checksum__c": "d63fd03384059cca50ca0af260176fa1ce9ca1f0f638fc62257cb591139f56a1",
+     "solcommon__Release_Checksum__c": null
+}

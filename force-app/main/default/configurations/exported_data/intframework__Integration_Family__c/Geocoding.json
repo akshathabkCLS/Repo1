@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Geocoding",
+     "intframework__External_Id__c": "Geocoding",
+     "intframework__Release_Checksum__c": "17669e81e975e8995263c4876f1b380bc182dd666d1b943a874427dc01c49117",
+     "solcommon__Release_Checksum__c": null
+}

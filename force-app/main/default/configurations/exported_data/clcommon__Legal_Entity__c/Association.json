@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Association",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "d7f5d7155078115b078f4355e80a979d9ea1489d3db6d977374fa5dc75276439",
+     "genesis__External_Id__c": "Association",
+     "solcommon__Release_Checksum__c": null
+}

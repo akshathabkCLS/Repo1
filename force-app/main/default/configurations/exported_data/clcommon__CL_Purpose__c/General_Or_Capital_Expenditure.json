@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "General or Capital Expenditure",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "General_Or_Capital_Expenditure",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "c86bb6431c417704c42be637af959a9ce016f9049376a84c0ee665eaf53bb325",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

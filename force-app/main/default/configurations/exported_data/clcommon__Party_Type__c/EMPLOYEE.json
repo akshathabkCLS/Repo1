@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "EMPLOYEE",
+     "clcommon__External_ID__c": "EMPLOYEE",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "75cfe79691a8af71b8a25d016e3c9eff00cd25e95e7c587dc7b639f75d9cc20e",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Other",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Other",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "18c811d2b4bc50b78cacc61d4abae07165a1b10bd59664ddb2a285dff97fa2d1",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

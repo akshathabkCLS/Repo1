@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Query Card",
+     "intframework__External_Id__c": "Query_Card",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Funding"
+     },
+     "intframework__Release_Checksum__c": "0370df3d3f0da351925956af324f9b1a77165431d990650253d6fe1f22a39f8b",
+     "solcommon__Release_Checksum__c": null
+}

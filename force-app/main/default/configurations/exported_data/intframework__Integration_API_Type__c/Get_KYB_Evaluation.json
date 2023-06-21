@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Get KYB Evaluation",
+     "intframework__External_Id__c": "Get_KYB_Evaluation",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Alloy_KYC_KYB"
+     },
+     "intframework__Release_Checksum__c": "635ed5d6e6c94ed50356b42698ac18995afe17c1b28d474590fcb7e19d4201aa",
+     "solcommon__Release_Checksum__c": null
+}

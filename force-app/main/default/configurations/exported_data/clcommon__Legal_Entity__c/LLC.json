@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "LLC",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "5277ace2eba410d34b3ed9c2abbfd741088e59b04215768ea5adcc7bcc4ad884",
+     "genesis__External_Id__c": "LLC",
+     "solcommon__Release_Checksum__c": null
+}

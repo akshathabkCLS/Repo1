@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Fetch All Integration",
+     "intframework__External_Id__c": "Fetch_All_Integration",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Accounting_Data"
+     },
+     "intframework__Release_Checksum__c": "5fb9336b908a51dcb72e596bf2f6539f9d2f2c3554474078eea735c3962be2ac",
+     "solcommon__Release_Checksum__c": null
+}

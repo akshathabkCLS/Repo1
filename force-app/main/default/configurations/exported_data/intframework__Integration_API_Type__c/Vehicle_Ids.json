@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Vehicle Ids",
+     "intframework__External_Id__c": "Vehicle_Ids",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Auto_Vehicle_Valuation"
+     },
+     "intframework__Release_Checksum__c": "c4a78024c21b2881f6f9d078a1bdf473d55c12e48df75f164df05ee11eb2fa01",
+     "solcommon__Release_Checksum__c": null
+}

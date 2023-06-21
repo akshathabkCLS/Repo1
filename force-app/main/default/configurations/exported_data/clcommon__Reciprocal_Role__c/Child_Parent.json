@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Child",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Individual_Individual"
+     },
+     "clcommon__External_ID__c": "Child_Parent",
+     "clcommon__Inverse_Role__c": "Parent",
+     "clcommon__Release_Checksum__c": "50fd10fd39bd2f39ecb092377eb39f8fd59b6a4171239eea2a6e5d361bcca66a",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

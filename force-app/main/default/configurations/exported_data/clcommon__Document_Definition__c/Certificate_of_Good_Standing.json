@@ -1,0 +1,28 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Certificate of Good Standing",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Document for Certificate of Good Standing",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Business_Documents"
+     },
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "c801a71871071de7ad45ad765bdb1fdbe5a032e17975a852834b93edcaffe876",
+     "clcommon__Required__c": true,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Certificate_of_Good_Standing",
+     "genesis__Object_Type__c": "clcommon__Party__c"
+}

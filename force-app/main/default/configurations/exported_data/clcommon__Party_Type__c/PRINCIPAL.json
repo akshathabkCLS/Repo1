@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "PRINCIPAL",
+     "clcommon__External_ID__c": "PRINCIPAL",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "4d18659bc97e3adb3a261500cf9d2f7c9dd773e43331159cbdb38c07107759a2",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

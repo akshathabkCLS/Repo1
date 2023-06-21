@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "clcommon__Asset_Class__c"
+     },
+     "Name": "Consumer Secured",
+     "clcommon__Asset_Category__c": "Consumer Loans",
+     "clcommon__Asset_Class_API_Name__c": null,
+     "clcommon__External_ID__c": "Consumer_Secured",
+     "clcommon__Release_Checksum__c": "4f5f9932e06268d4d2dae3d022cf4a504c9d67fef0bf87fa3c22ebe6943813fa",
+     "genesis__UUX_Customer__c": true,
+     "solcommon__Release_Checksum__c": null,
+     "oao__Active_Product_Type__c": false,
+     "oao__Multiselect__c": false,
+     "oao__Number_of_Products__c": null,
+     "oao__Product_Image__c": null,
+     "oao__Received_From_Gro__c": false,
+     "oao__Sequence__c": null
+}

@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "Equifax",
+     "intframework__Activator_Class_Name__c": "intadapter.EquifaxProviderActivator",
+     "intframework__Active__c": false,
+     "intframework__External_Id__c": "KYC_Equifax",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "KYC"
+     },
+     "intframework__Product_Name__c": "Equifax",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "Equifax Systems",
+     "intframework__Release_Checksum__c": "d0cd08ec87c13d3fbfadebc36bcde74d752eb42cd1f09681488b93ea9957cb1a",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

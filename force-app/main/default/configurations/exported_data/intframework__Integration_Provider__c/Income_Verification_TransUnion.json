@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "TransUnion",
+     "intframework__Activator_Class_Name__c": "intadapter.TransUnionActivator",
+     "intframework__Active__c": false,
+     "intframework__External_Id__c": "Income_Verification_TransUnion",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Income_Verification"
+     },
+     "intframework__Product_Name__c": "TransUnion",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "TransUnion Systems",
+     "intframework__Release_Checksum__c": "9b8357fd579b042bfdc2e478520126ae0c9d9933523e76b3dd06b25a75eaf0a9",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

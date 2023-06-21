@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "AOGroService",
+     "intframework__External_Id__c": "AOGroService",
+     "intframework__Release_Checksum__c": "8d9bc673a81d506c02a28c094c86d31d90b8c4b7c0afe80dd314fbf55148c50e",
+     "solcommon__Release_Checksum__c": null
+}

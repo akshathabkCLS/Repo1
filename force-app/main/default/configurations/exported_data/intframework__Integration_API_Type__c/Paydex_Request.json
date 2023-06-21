@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Paydex Request",
+     "intframework__External_Id__c": "Paydex_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Business_Risk"
+     },
+     "intframework__Release_Checksum__c": "b2cf1d68a67586d8390248f3dab8d52b11ceba1b2a991ae5a1bdc89344af2a54",
+     "solcommon__Release_Checksum__c": null
+}

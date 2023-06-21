@@ -1,0 +1,63 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "Is Start Task complete",
+     "clcommon__Document_Definition__r": null,
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "Is_Start_Task_complete",
+     "clcommon__Object_Type__c": "intdm__OCR_Tasks__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "a6350affe6a891b5bd521b204580fdbaf23a0640c2131b4d61f332e07512a37e",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": null,
+          "successMessage": "Start task is completed.",
+          "successActions": [],
+          "sObjectName": "",
+          "saveRuleClass": null,
+          "ruleName": "Is Start Task complete",
+          "priority": 2,
+          "parentRuleID": null,
+          "parentRecordId": null,
+          "objectType": "intdm__OCR_Tasks__c",
+          "failureMessage": "Start task is in progress.",
+          "failureActions": [],
+          "externalId": null,
+          "executeActions": true,
+          "evaluationExpression": "$1",
+          "enabled": null,
+          "criteria": [
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "intdm__OCR_Tasks__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "Success",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Is Start Task complete",
+                    "fieldAPIName": "intdm__Start_Task_Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               }
+          ],
+          "category": "ABBYY OCR",
+          "abortQueueExecutionOnFailure": true
+     },
+     "clcommon__Rule_Priority__c": 2,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "ABBYY_OCR"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Grandparent",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Individual_Individual"
+     },
+     "clcommon__External_ID__c": "Grandparent_Grandchild",
+     "clcommon__Inverse_Role__c": "Grandchild",
+     "clcommon__Release_Checksum__c": "771b0ae16bbd9ce1118d8e1166a1e4c8c173326ed275c179e097557845acafc8",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "KYC",
+     "intframework__External_Id__c": "KYC",
+     "intframework__Release_Checksum__c": "d4a4d2205eb65d9750b52a7ac238633a1dffed901f4180d696cfaa1a5cc593e6",
+     "solcommon__Release_Checksum__c": null
+}

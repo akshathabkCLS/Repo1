@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "CONTROL PERSON",
+     "clcommon__External_ID__c": "BENEFICIAL_OWNER_MANAGER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": true,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "d8ad1d640b231274cdd4c3bbbf2feae2f793ca554565cb6995d83ab5a69a52d2",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

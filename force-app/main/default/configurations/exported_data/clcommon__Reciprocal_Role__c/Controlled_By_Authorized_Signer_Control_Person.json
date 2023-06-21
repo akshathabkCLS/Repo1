@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Controlled By",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Business_Individual"
+     },
+     "clcommon__External_ID__c": "Controlled_By_Authorized_Signer_Control_Person",
+     "clcommon__Inverse_Role__c": "Authorized Signer / Control Person",
+     "clcommon__Release_Checksum__c": "e49f1ff3f67bd31a4d91d39ac73c3fa17caab8f76e42cd682f529c3aac78263e",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

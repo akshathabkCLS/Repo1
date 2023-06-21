@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "ProductType",
+     "intframework__Activator_Class_Name__c": null,
+     "intframework__Active__c": true,
+     "intframework__External_Id__c": "ProductType",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "AOGroService"
+     },
+     "intframework__Product_Name__c": null,
+     "intframework__Product_Version__c": null,
+     "intframework__Provider_Name__c": "ProductType",
+     "intframework__Release_Checksum__c": "1bb5be03c581c9bccb0f8915f41cd51609f4c4fad07427de6024121458b38fa2",
+     "intframework__Support_Type__c": "Custom",
+     "solcommon__Release_Checksum__c": null
+}

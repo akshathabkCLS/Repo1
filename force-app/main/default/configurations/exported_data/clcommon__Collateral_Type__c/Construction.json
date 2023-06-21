@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Collateral_Type__c"
+     },
+     "Name": "Construction",
+     "clcommon__Advance_Rate__c": null,
+     "clcommon__Collateral_Type_Code__c": null,
+     "clcommon__External_ID__c": "Construction",
+     "clcommon__Itemized_Collateral_Values__c": false,
+     "clcommon__Release_Checksum__c": "06f547e4370be54e23afb699c01e215f67130cd7febb0028e6bae01c86f0c9fa",
+     "intdm__KBB_valuation_applicable__c": false,
+     "solcommon__Release_Checksum__c": null
+}

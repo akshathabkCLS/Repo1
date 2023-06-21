@@ -1,0 +1,30 @@
+{
+     "attributes": {
+          "type": "clcommon__Execution_Criteria__c"
+     },
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Approval"
+     },
+     "clcommon__External_ID__c": "Max_Combined_Limit_c",
+     "clcommon__Field_API_Name__c": "clcommon__Max_Combined_Limit__c",
+     "clcommon__Field_Name__c": "Limit",
+     "clcommon__Field_Type__c": "CURRENCY",
+     "clcommon__Matching_Type__c": null,
+     "clcommon__Matching_Value_Dynamic__r": null,
+     "clcommon__Matching_Value__c": null,
+     "clcommon__Maximum_Value__c": null,
+     "clcommon__Minimum_Value__c": null,
+     "clcommon__Primary_Object_Reference__c": "clcommon__Approval_Authority__r",
+     "clcommon__Related_Object__c": "clcommon__Approval_Authority__c",
+     "clcommon__Release_Checksum__c": "a1b5560f6fe509d5b3637b3ceb857af5f66284c5ee22ab32863b9e4d84219ba0",
+     "clcommon__Sequence__c": 1,
+     "genesis__Policy_Condition_Definition_Reference__c": null,
+     "genesis__Policy_Condition_Definition__r": null,
+     "genesis__Scorecard_Object_Reference__c": null,
+     "genesis__Task_Setup_Object_Reference__c": null,
+     "genesis__Task_Setup__r": null,
+     "solcommon__Release_Checksum__c": null
+}

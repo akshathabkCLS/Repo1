@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Alloy KYC/KYB",
+     "intframework__External_Id__c": "Alloy_KYC_KYB",
+     "intframework__Release_Checksum__c": "0b83455aaa0d92fc868d3c20dfa8544ec5b3e93f1d1a0c90e2c9879b0719b5b6",
+     "solcommon__Release_Checksum__c": null
+}

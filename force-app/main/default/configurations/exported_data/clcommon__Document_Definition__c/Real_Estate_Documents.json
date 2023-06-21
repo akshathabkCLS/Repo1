@@ -1,0 +1,23 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Real Estate Documents",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Parent Document Definition for rent roll csv upload",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": null,
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "99549b86652c7be6dfd3d649e7bf534cf68e08b8c997ccdcea30acbf0b27b109",
+     "clcommon__Required__c": false,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Real_Estate_Documents",
+     "genesis__Object_Type__c": "genesis__Application_Collateral__c"
+}

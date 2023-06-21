@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Business Identification",
+     "intframework__External_Id__c": "Business_Identification",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Business_Search"
+     },
+     "intframework__Release_Checksum__c": "cba06b5036f3e7ecd7a7281fb26043c719a48e3f24a3d8dc83232df91bc26a4a",
+     "solcommon__Release_Checksum__c": null
+}

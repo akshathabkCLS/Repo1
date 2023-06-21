@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "PRIMARY",
+     "clcommon__External_ID__c": "PRIMARY",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": {
+          "attributes": {
+               "type": "clcommon__Reciprocal_Role__c"
+          },
+          "clcommon__External_ID__c": "Controlled_By_Primary"
+     },
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "a5955df09c4debf5dadaae2df627fda7a34114783f6f66b45a511613898c011a",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

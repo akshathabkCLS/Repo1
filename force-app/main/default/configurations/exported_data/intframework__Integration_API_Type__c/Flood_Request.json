@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Flood Request",
+     "intframework__External_Id__c": "Flood_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Flood_Determination"
+     },
+     "intframework__Release_Checksum__c": "69bb4b61fac4a5a9ae8a523ccb2c763471f1c1d72170377caaacb9b0d29e4ab2",
+     "solcommon__Release_Checksum__c": null
+}

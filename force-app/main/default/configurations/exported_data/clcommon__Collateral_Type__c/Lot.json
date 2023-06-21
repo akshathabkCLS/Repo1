@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Collateral_Type__c"
+     },
+     "Name": "Lot",
+     "clcommon__Advance_Rate__c": null,
+     "clcommon__Collateral_Type_Code__c": null,
+     "clcommon__External_ID__c": "Lot",
+     "clcommon__Itemized_Collateral_Values__c": false,
+     "clcommon__Release_Checksum__c": "3293a8caa6751e0d13b23c65bc498d5341507fe90efcef48b0916ab0f81faa5f",
+     "intdm__KBB_valuation_applicable__c": false,
+     "solcommon__Release_Checksum__c": null
+}

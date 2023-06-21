@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "ABBYY Task Status Request",
+     "intframework__External_Id__c": "ABBYY_Task_Status_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "OCR"
+     },
+     "intframework__Release_Checksum__c": "56b3be489140942e128a05e3b774c83665a1cffa74b1e8b33e96e38c377c9cf2",
+     "solcommon__Release_Checksum__c": null
+}

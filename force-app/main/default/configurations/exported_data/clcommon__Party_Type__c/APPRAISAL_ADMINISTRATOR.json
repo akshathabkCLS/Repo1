@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "APPRAISAL ADMINISTRATOR",
+     "clcommon__External_ID__c": "APPRAISAL_ADMINISTRATOR",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "94287c0cbc3034f6f7b36617724f6e0edff63efef4f603ceecea413e1eea572e",
+     "clcommon__Role__c": "Internal",
+     "solcommon__Release_Checksum__c": null
+}

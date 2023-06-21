@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "ApplicationRules",
+     "clcommon__External_ID__c": "ApplicationRules",
+     "clcommon__Function__c": null,
+     "clcommon__Logging_Enabled__c": true,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "0ea222acc1d7be7c370f343fd23701f62f43bfcc0edc4f0f7b19217838709b28",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

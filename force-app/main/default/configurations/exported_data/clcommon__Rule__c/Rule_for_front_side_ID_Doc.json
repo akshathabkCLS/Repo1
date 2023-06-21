@@ -1,0 +1,141 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "Rule for front side ID Doc",
+     "clcommon__Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Front_Side_of_Driver_s_License_ID"
+     },
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "Rule_for_front_side_ID_Doc",
+     "clcommon__Object_Type__c": "clcommon__Party__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "ceedbb62be2e73d3aecabf005b28f1df993f15233e1d8bf47f8b1153f324f3ba",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": "DocumentDefinitionPreSaveValidation",
+          "successMessage": "Rule Evaluation Passed for rule : Rule for front side ID Doc",
+          "successActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "additionalParams": "{\"Action type\":\"Success\"}",
+                    "actionName": "Action1"
+               }
+          ],
+          "sObjectName": "clcommon__Document_Definition__c",
+          "saveRuleClass": null,
+          "ruleName": "Rule for front side ID Doc",
+          "priority": 7,
+          "parentRuleID": null,
+          "parentRecordId": "a1T8V00000B4EpMUAV",
+          "objectType": "clcommon__Party__c",
+          "failureMessage": "Rule Evaluation Failed for rule : Rule for front side ID Doc",
+          "failureActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "additionalParams": "{\"Action type\":\"Failure\"}",
+                    "actionName": "Action2"
+               }
+          ],
+          "externalId": "Rule_for_front_side_ID_Doc",
+          "executeActions": null,
+          "evaluationExpression": "$1&&$2&&$3&&$4&&$5",
+          "enabled": null,
+          "criteria": [
+               {
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "clcommon__Party__c",
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": "Package",
+                    "matchingType": "==",
+                    "fieldType": "STRING",
+                    "fieldName": "Name",
+                    "fieldAPIName": "genesis__application__r.RecordType.name",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": null
+               },
+               {
+                    "type": "Expression",
+                    "sequence": "$2",
+                    "relatedObject": "clcommon__Party__c",
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": "Business Account Opening Package",
+                    "matchingType": "==",
+                    "fieldType": "STRING",
+                    "fieldName": "Product Name",
+                    "fieldAPIName": "genesis__application__r.genesis__cl_product__r.clcommon__product_name__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": null
+               },
+               {
+                    "type": "Expression",
+                    "sequence": "$3",
+                    "relatedObject": "clcommon__Party__c",
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": "Sole Proprietorship,Partnership,LLC,Corporation,Non-Profit",
+                    "matchingType": "IN",
+                    "fieldType": "PICKLIST",
+                    "fieldName": "Business Category",
+                    "fieldAPIName": "genesis__application__r.genesis__account__r.oao__business_category__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": null
+               },
+               {
+                    "type": "Expression",
+                    "sequence": "$4",
+                    "relatedObject": "clcommon__Party__c",
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": "PRIMARY,AUTHORIZED SIGNER,BENEFICIAL OWNER,CONTROL PERSON,AUTHORIZED SIGNER / BENEFICIAL OWNER,CONTROL PERSON / AUTHORIZED SIGNER,CONTROL PERSON / BENEFICIAL OWNER,CONTROL PERSON / AUTHORIZED SIGNER / BENEFICIAL OWNER",
+                    "matchingType": "IN",
+                    "fieldType": "STRING",
+                    "fieldName": "Party Type Name",
+                    "fieldAPIName": "clcommon__type__r.name",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": null
+               },
+               {
+                    "type": "Expression",
+                    "sequence": "$5",
+                    "relatedObject": "clcommon__Party__c",
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": " Sole Proprietorship,Partnership,LLC,Non-Profit,Non-Profit Corporation,S Corporation,C Corporation",
+                    "matchingType": "IN",
+                    "fieldType": "PICKLIST",
+                    "fieldName": "Business Sub Category",
+                    "fieldAPIName": "genesis__application__r.genesis__account__r.oao__business_sub_category_type__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": null
+               }
+          ],
+          "category": "DocumentDefinition",
+          "abortQueueExecutionOnFailure": null
+     },
+     "clcommon__Rule_Priority__c": 7,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "DocumentDefinition"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

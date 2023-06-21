@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "genesis__ProductDepartment_Task_Junction__c"
+     },
+     "genesis__Assign_to_Queue__c": false,
+     "genesis__External_ID__c": "Cloud_Lending_Test_Product_Cloud_Lending_Underwriting_Department_Task_Testing_2",
+     "genesis__Queue_Id__c": null,
+     "genesis__Queue_Name__c": null,
+     "genesis__Release_Checksum__c": "125d271ec164ab228199d2dbdc92fc74805eeece4d58665240edd5faf3e9698f",
+     "genesis__Task_Order__c": null,
+     "genesis__Task_Setup__r": {
+          "attributes": {
+               "type": "genesis__Task_Setup__c"
+          },
+          "genesis__External_ID__c": "Task_Testing_2"
+     }
+}

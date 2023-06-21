@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "BENEFICIAL OWNER CERTIFIER",
+     "clcommon__External_ID__c": "BENEFICIAL_OWNER_CERTIFIER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": true,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "94e60806c6134442180e8a40af3de9a18b7c19cefadb09e295355db16cf1f156",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

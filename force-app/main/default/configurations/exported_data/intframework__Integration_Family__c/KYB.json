@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "KYB",
+     "intframework__External_Id__c": "KYB",
+     "intframework__Release_Checksum__c": "1d5bfa6b90a5072eb8c484294cad6cc313dd7cb537877d090259a0616db50275",
+     "solcommon__Release_Checksum__c": null
+}

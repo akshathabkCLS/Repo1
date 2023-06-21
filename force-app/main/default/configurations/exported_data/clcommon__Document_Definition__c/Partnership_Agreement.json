@@ -1,0 +1,28 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Partnership Agreement",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Document for Partnership Agreement",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Business_Documents"
+     },
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "6b0861c7b15c94c9a79840acdfed7a293317a3db192200d9b0ad4db23eedbbce",
+     "clcommon__Required__c": true,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Partnership_Agreement",
+     "genesis__Object_Type__c": "clcommon__Party__c"
+}

@@ -1,0 +1,29 @@
+{
+     "attributes": {
+          "type": "genesis__Policy_Exception_Definition__c"
+     },
+     "genesis__Active__c": true,
+     "genesis__Condition_Type__c": "Document",
+     "genesis__Description__c": "Proof of Address Policy",
+     "genesis__Enable_Override__c": true,
+     "genesis__Evaluation_Expression__c": "1",
+     "genesis__External_ID__c": "Proof_of_Address_Policy",
+     "genesis__Object_Type__c": "clcommon__Party__c",
+     "genesis__Policy_Condition_Generation_Rule__r": {
+          "attributes": {
+               "type": "clcommon__Rule__c"
+          },
+          "clcommon__External_ID__c": "proof_of_address_policy_rule"
+     },
+     "genesis__Policy_Condition_Name__c": "Proof of Address Policy",
+     "genesis__Portal_Description__c": null,
+     "genesis__Portal_Title__c": null,
+     "genesis__Product_Department_Task_Association__r": null,
+     "genesis__Release_Checksum__c": "dc05f478afb7a52e5c93c43e370917f794a46ad86c4dd4a063ae9f3044a752f8",
+     "genesis__Requires_Approval__c": false,
+     "genesis__Requires_Officer_Explanation__c": false,
+     "genesis__Type__c": null,
+     "solcommon__Portal_Description__c": null,
+     "solcommon__Portal_Title__c": null,
+     "solcommon__Release_Checksum__c": null
+}

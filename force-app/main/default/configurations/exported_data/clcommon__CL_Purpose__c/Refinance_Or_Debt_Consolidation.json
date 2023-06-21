@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Refinance or Debt Consolidation",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Refinance_Or_Debt_Consolidation",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "4574ed0a2fcefb2dcc3b8a610cd6107a8335fd22294bd89f01d842592f465211",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,155 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "Coresmen Create Deposit Account Request",
+     "intframework__API_Endpoint__c": "accounts",
+     "intframework__API_Named_Credential__c": "Coresmen",
+     "intframework__Adapter_Class_Name__c": "q2adapters.CoresmenCreateDepositAccountAdapter",
+     "intframework__Additional_Header_Parameters__c": null,
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "Coresmen_Create_Deposit_Account_Request",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "Create_Deposit_Account_Request"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "Coresmen_Config"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Coresmen"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "Q2"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 1,
+     "intframework__Release_Checksum__c": "b7aa4d7691c7c305b8ae62dabc2b223c028559d930ee53d8551a41f43cf9aa06",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "Q2CoresmenAPI",
+               "staticParameters": [],
+               "filters": [
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "businessPartyInfo",
+                         "fields": [
+                              {
+                                   "externalField": "depositPartyRelationshipType",
+                                   "fieldAPI": "clcommon__Type__r.Name"
+                              },
+                              {
+                                   "externalField": "qualifier",
+                                   "fieldAPI": "clcommon__Type__r.Name"
+                              },
+                              {
+                                   "externalField": "depositPartyId",
+                                   "fieldAPI": "clcommon__Account__r.clcommon__CIF__c"
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId AND clcommon__Contact__c = null AND clcommon__Account__r.genesis__Business_Information__r.q2adapters__Does_Account_exist_in_core__c = TRUE"
+                    },
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "applicantPartiesInfo",
+                         "fields": [
+                              {
+                                   "externalField": "depositPartyRelationshipType",
+                                   "fieldAPI": "clcommon__Type__r.Name"
+                              },
+                              {
+                                   "externalField": "qualifier",
+                                   "fieldAPI": "clcommon__Type__r.Name"
+                              },
+                              {
+                                   "externalField": "depositPartyId",
+                                   "fieldAPI": "clcommon__Contact__r.clcommon__CIF__c"
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId AND clcommon__Contact__c != null AND clcommon__Contact__r.clcommon__Personal_Information__r.q2adapters__Does_Contact_exist_in_core__c = TRUE"
+                    },
+                    {
+                         "objectAPI": "genesis__Applications__c",
+                         "objectAlias": "applicationAndProductDetails",
+                         "fields": [
+                              {
+                                   "externalField": "applicationId",
+                                   "fieldAPI": "genesis__Parent_Application__r.Name"
+                              },
+                              {
+                                   "externalField": "productAppliedForId",
+                                   "fieldAPI": "genesis__CL_Product__c"
+                              },
+                              {
+                                   "externalField": "productType",
+                                   "fieldAPI": "genesis__CL_Product__r.q2adapters__Core_Product_Type__c"
+                              },
+                              {
+                                   "externalField": "productSubType",
+                                   "fieldAPI": "genesis__CL_Product__r.q2adapters__Core_Product_SubType__c"
+                              },
+                              {
+                                   "externalField": "accountSubType",
+                                   "fieldAPI": "genesis__Account__r.clcommon__Legal_Entity_Type__r.Name"
+                              }
+                         ],
+                         "whereClause": "id = :childAppId"
+                    }
+               ]
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "True",
+               "PublishAsJSON": "True"
+          },
+          "DMLOperations": [
+               {
+                    "dmlOperation": "Update",
+                    "objectMappings": [
+                         {
+                              "objectAPI": "genesis__Applications__c",
+                              "fields": [
+                                   {
+                                        "externalField": "doesAccountExistInCore",
+                                        "fieldAPI": "q2adapters__Does_Application_Exist_In_Core__c"
+                                   },
+                                   {
+                                        "externalField": "data.applicationMessage.applicationList.application[0].productAppliedForList.productAppliedFor[0].productDetail.deposit.accountId",
+                                        "fieldAPI": "genesis__Loan_Number__c"
+                                   }
+                              ],
+                              "whereClause": "Id = :childAppId AND genesis__Loan_Number__c = NULL"
+                         }
+                    ]
+               }
+          ]
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": null,
+     "intframework__UI_Page_Type__c": null,
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}

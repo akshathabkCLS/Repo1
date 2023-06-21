@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Create Envelope",
+     "intframework__External_Id__c": "Create_Envelope",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "E_Sign"
+     },
+     "intframework__Release_Checksum__c": "a0a0dcdbf87f4dc84f5ba623ad513ad16c1a053045cd377ca672f59e088bd15d",
+     "solcommon__Release_Checksum__c": null
+}

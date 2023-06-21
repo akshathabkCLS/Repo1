@@ -1,0 +1,29 @@
+{
+     "attributes": {
+          "type": "genesis__Policy_Exception_Definition__c"
+     },
+     "genesis__Active__c": true,
+     "genesis__Condition_Type__c": "Data",
+     "genesis__Description__c": "KYC Policy",
+     "genesis__Enable_Override__c": true,
+     "genesis__Evaluation_Expression__c": "1",
+     "genesis__External_ID__c": "KYC_Policy",
+     "genesis__Object_Type__c": "clcommon__Party__c",
+     "genesis__Policy_Condition_Generation_Rule__r": {
+          "attributes": {
+               "type": "clcommon__Rule__c"
+          },
+          "clcommon__External_ID__c": "Rule_for_KYC_Policy"
+     },
+     "genesis__Policy_Condition_Name__c": "KYC Policy",
+     "genesis__Portal_Description__c": null,
+     "genesis__Portal_Title__c": null,
+     "genesis__Product_Department_Task_Association__r": null,
+     "genesis__Release_Checksum__c": "cd602f499d1a604e126f30522fc11c74468e633e968319d3f85c8a8372118add",
+     "genesis__Requires_Approval__c": false,
+     "genesis__Requires_Officer_Explanation__c": false,
+     "genesis__Type__c": null,
+     "solcommon__Portal_Description__c": null,
+     "solcommon__Portal_Title__c": null,
+     "solcommon__Release_Checksum__c": null
+}

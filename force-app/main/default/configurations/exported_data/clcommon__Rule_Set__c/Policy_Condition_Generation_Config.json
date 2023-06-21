@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "PolicyConditionGenerationConfig",
+     "clcommon__External_ID__c": "Policy_Condition_Generation_Config",
+     "clcommon__Function__c": null,
+     "clcommon__Logging_Enabled__c": false,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "92dc1d34346c06954db7a9dc7ab28cd97ea66706bcfc143e9c96c07fcddcc393",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

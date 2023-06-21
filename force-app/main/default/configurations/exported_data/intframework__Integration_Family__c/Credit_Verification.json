@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Credit Verification",
+     "intframework__External_Id__c": "Credit_Verification",
+     "intframework__Release_Checksum__c": "f2ffba461fc0827c118ac2b85e317100053a9d6c38aac9961b7c3d0150faf382",
+     "solcommon__Release_Checksum__c": null
+}

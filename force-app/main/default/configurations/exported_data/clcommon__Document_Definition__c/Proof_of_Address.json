@@ -1,0 +1,28 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Proof of Address",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Document for Proof of Address.",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Identification_Documents"
+     },
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "f9df034472b3c6b19d6a9b47733f88d9a7d659161b736a6dc1f30d2f6bca3e7f",
+     "clcommon__Required__c": true,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Proof_of_Address",
+     "genesis__Object_Type__c": "clcommon__Party__c"
+}

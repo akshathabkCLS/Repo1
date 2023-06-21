@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Governmental Entity",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "4779076d3167f7f57e9c53050243890074ba40a005cce3efb7699dde129eafc6",
+     "genesis__External_Id__c": "Governmental_Entity",
+     "solcommon__Release_Checksum__c": null
+}

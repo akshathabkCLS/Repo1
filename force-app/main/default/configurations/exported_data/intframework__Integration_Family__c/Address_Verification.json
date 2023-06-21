@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Address Verification",
+     "intframework__External_Id__c": "Address_Verification",
+     "intframework__Release_Checksum__c": "6c1e95929bea33cf2bebee122108960ff25aac6403d82b5a871031a4d8f898a4",
+     "solcommon__Release_Checksum__c": null
+}

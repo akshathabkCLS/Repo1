@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Fetch All Categories",
+     "intframework__External_Id__c": "Fetch_All_Categories",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Accounting_Data"
+     },
+     "intframework__Release_Checksum__c": "62d9a3c7447db8997eac6d111834f2255e75ca05836315d229feb1cc76fa5d21",
+     "solcommon__Release_Checksum__c": null
+}

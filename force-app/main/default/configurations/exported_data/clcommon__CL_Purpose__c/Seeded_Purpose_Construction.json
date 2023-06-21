@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Seeded Purpose - Construction",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Seeded_Purpose_Construction",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "7dc692184e390738840443125b6b3dc02908bb6b93d8ad6452a67f255c8a2adf",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "CSI Runtime Session",
+     "intframework__External_Id__c": "CSI_Runtime_Session",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Documents_And_Disclosures"
+     },
+     "intframework__Release_Checksum__c": "efd1517a2b9b9b9fcf387c094dd31e9cfcf287ba88913fd3d90cc67c8b57d334",
+     "solcommon__Release_Checksum__c": null
+}

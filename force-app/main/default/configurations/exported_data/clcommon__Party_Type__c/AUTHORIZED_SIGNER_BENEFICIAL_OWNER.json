@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "AUTHORIZED SIGNER / BENEFICIAL OWNER",
+     "clcommon__External_ID__c": "AUTHORIZED_SIGNER_BENEFICIAL_OWNER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": {
+          "attributes": {
+               "type": "clcommon__Reciprocal_Role__c"
+          },
+          "clcommon__External_ID__c": "Owned_By_Authorized_Signer_Beneficial_Owner"
+     },
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "d0b788cff1d49525460e56b14cfd3245cdc43d940894c7e6e7925d446b64c1bb",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

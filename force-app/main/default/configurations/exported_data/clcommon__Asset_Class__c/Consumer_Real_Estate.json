@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "clcommon__Asset_Class__c"
+     },
+     "Name": "Consumer Real Estate",
+     "clcommon__Asset_Category__c": "Consumer Loans",
+     "clcommon__Asset_Class_API_Name__c": null,
+     "clcommon__External_ID__c": "Consumer_Real_Estate",
+     "clcommon__Release_Checksum__c": "715b36bb5b11d0997892fdaa900445b5c6aa6b3fe8f1d9ca14a529a906a97353",
+     "genesis__UUX_Customer__c": true,
+     "solcommon__Release_Checksum__c": null,
+     "oao__Active_Product_Type__c": false,
+     "oao__Multiselect__c": false,
+     "oao__Number_of_Products__c": null,
+     "oao__Product_Image__c": null,
+     "oao__Received_From_Gro__c": false,
+     "oao__Sequence__c": null
+}

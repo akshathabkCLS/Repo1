@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Business Risk Analysis",
+     "intframework__External_Id__c": "Business_Risk_Analysis",
+     "intframework__Release_Checksum__c": "154274925f6687d131afcc0535ac2de2575f0df5f75ea0e2d187404469d4fecb",
+     "solcommon__Release_Checksum__c": null
+}

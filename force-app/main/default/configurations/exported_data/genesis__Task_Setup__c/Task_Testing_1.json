@@ -1,0 +1,23 @@
+{
+     "attributes": {
+          "type": "genesis__Task_Setup__c"
+     },
+     "genesis__Category__c": null,
+     "genesis__Description__c": "Task Number 1 for Testing",
+     "genesis__Evaluation_Expression_For_Execution__c": null,
+     "genesis__External_ID__c": "Task_Testing_1",
+     "genesis__Generate_With_Policy_Conditions__c": false,
+     "genesis__Group_At_Asset_Class__c": false,
+     "genesis__Is_Parallel__c": false,
+     "genesis__Mandatory__c": true,
+     "genesis__Next_Task_Name__c": null,
+     "genesis__Object_Type__c": "genesis__applications__c",
+     "genesis__Priority__c": "High",
+     "genesis__Release_Checksum__c": "22fa228196f13361660717d3ae0830e935ed87811ca9a8a1c05f87f9941b45dc",
+     "genesis__Retain_Completed_Task__c": false,
+     "genesis__Task_Completion_Rule__r": null,
+     "genesis__Task_Name__c": "Task Testing 1",
+     "genesis__Type__c": "MANUAL",
+     "genesis__days_until_due_date__c": null,
+     "solcommon__Release_Checksum__c": null
+}

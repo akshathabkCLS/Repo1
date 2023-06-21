@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Purchase Vehicle",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Purchase_Vehicle",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "9a8d6b5f7886ccdf084f3e6d3210fae012d993eef3e7a45cf36812186c92b9ae",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

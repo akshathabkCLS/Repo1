@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Signed By",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Business_Individual"
+     },
+     "clcommon__External_ID__c": "Signed_By_Authorized_Signer",
+     "clcommon__Inverse_Role__c": "Authorized Signer",
+     "clcommon__Release_Checksum__c": "70e41a83e070e910138f42e747af8a82e54790398273ed2d0e8b1eb7ee0de7e0",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

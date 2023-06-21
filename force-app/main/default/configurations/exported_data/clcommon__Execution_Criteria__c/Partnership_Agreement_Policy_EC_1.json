@@ -1,0 +1,35 @@
+{
+     "attributes": {
+          "type": "clcommon__Execution_Criteria__c"
+     },
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Scorecard"
+     },
+     "clcommon__External_ID__c": "Partnership_Agreement_Policy_EC_1",
+     "clcommon__Field_API_Name__c": "clcommon__Category_Name__c",
+     "clcommon__Field_Name__c": "Category Name",
+     "clcommon__Field_Type__c": "STRING",
+     "clcommon__Matching_Type__c": "==",
+     "clcommon__Matching_Value_Dynamic__r": null,
+     "clcommon__Matching_Value__c": "Partnership Agreement",
+     "clcommon__Maximum_Value__c": null,
+     "clcommon__Minimum_Value__c": null,
+     "clcommon__Primary_Object_Reference__c": null,
+     "clcommon__Related_Object__c": "clcommon__Document_Category__c",
+     "clcommon__Release_Checksum__c": "24acb81608a7b365c616ce0d9c8730b6f4f65000897a9b2a0ccc86ed93c499d4",
+     "clcommon__Sequence__c": 1,
+     "genesis__Policy_Condition_Definition_Reference__c": null,
+     "genesis__Policy_Condition_Definition__r": {
+          "attributes": {
+               "type": "genesis__Policy_Exception_Definition__c"
+          },
+          "genesis__External_ID__c": "Partnership_Agreement_Policy"
+     },
+     "genesis__Scorecard_Object_Reference__c": null,
+     "genesis__Task_Setup_Object_Reference__c": null,
+     "genesis__Task_Setup__r": null,
+     "solcommon__Release_Checksum__c": null
+}

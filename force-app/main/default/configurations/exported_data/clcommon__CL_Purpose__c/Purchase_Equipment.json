@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Purchase Equipment",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Purchase_Equipment",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "a021c1508b8504ef9c62207b304037e4ab0d2324db0d2c7abe157cb4f3a538fe",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

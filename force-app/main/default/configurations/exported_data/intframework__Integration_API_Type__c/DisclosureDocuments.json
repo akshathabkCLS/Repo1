@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "DisclosureDocuments",
+     "intframework__External_Id__c": "DisclosureDocuments",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "AOGroService"
+     },
+     "intframework__Release_Checksum__c": "7cbefab616b8850b4fb439a67b59c7160edeaa15e5587f9e340f5dbd47c57b7d",
+     "solcommon__Release_Checksum__c": null
+}

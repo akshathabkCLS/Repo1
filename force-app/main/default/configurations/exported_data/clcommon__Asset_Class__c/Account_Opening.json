@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "clcommon__Asset_Class__c"
+     },
+     "Name": "Account Opening",
+     "clcommon__Asset_Category__c": null,
+     "clcommon__Asset_Class_API_Name__c": "Account_Opening",
+     "clcommon__External_ID__c": "Account_Opening",
+     "clcommon__Release_Checksum__c": "f0f4e01576868518e29e0ca31ff8ae213c0474f01acccafffb9db5027be4d843",
+     "genesis__UUX_Customer__c": true,
+     "solcommon__Release_Checksum__c": null,
+     "oao__Active_Product_Type__c": false,
+     "oao__Multiselect__c": false,
+     "oao__Number_of_Products__c": null,
+     "oao__Product_Image__c": null,
+     "oao__Received_From_Gro__c": false,
+     "oao__Sequence__c": null
+}

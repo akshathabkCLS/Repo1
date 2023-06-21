@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Add Additional Entities",
+     "intframework__External_Id__c": "Add_Additional_Entities",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Alloy_KYC_KYB"
+     },
+     "intframework__Release_Checksum__c": "bb6692e8383d9b0fee8f965a10a0db81b2fa1416dbcbe3c987cfee594fa01910",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,115 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "RuleOnEmployeeApplication",
+     "clcommon__Document_Definition__r": null,
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "RuleOnEmployeeApplication",
+     "clcommon__Object_Type__c": "genesis__applications__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "57eee5082aa232798bbb4ee0699683ad0572210e36de78738a08e995665c2440",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": null,
+          "successMessage": "Success",
+          "successActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.ApplicationComplianceInfoAction",
+                    "additionalParams": "{\"genesis__Employee_Application__c\":true}",
+                    "actionName": "SuccessActionForEmployeeApplication"
+               }
+          ],
+          "sObjectName": "",
+          "saveRuleClass": null,
+          "ruleName": "RuleOnEmployeeApplication",
+          "priority": null,
+          "parentRuleID": null,
+          "parentRecordId": null,
+          "objectType": "genesis__applications__c",
+          "failureMessage": "Failure",
+          "failureActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.ApplicationComplianceInfoAction",
+                    "additionalParams": "{\"genesis__Employee_Application__c\":false}",
+                    "actionName": "FailureActionForEmployeeApplication"
+               }
+          ],
+          "externalId": null,
+          "executeActions": null,
+          "evaluationExpression": "$1 && $2 && $3",
+          "enabled": null,
+          "criteria": [
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "clcommon__Party__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "true",
+                    "matchingType": "==",
+                    "isFieldComparison": null,
+                    "fieldType": "BOOLEAN",
+                    "fieldName": "Employee",
+                    "fieldAPIName": "clcommon__contact__r.clcommon__Employee__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$2",
+                    "relatedObject": "genesis__applications__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "APPROVED - CONVERTED TO CONTRACT",
+                    "matchingType": "!=",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Status",
+                    "fieldAPIName": "genesis__Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               },
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$3",
+                    "relatedObject": "genesis__applications__c",
+                    "offsetValue": null,
+                    "minimumValue": null,
+                    "maximumValue": null,
+                    "matchingValue": "REJECTED",
+                    "matchingType": "!=",
+                    "isFieldComparison": null,
+                    "fieldType": "STRING",
+                    "fieldName": "Status",
+                    "fieldAPIName": "genesis__Status__c",
+                    "criterionName": null,
+                    "apexClassName": null,
+                    "additionalParams": ""
+               }
+          ],
+          "category": "ApplicationRules",
+          "abortQueueExecutionOnFailure": null
+     },
+     "clcommon__Rule_Priority__c": null,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "ApplicationRules"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

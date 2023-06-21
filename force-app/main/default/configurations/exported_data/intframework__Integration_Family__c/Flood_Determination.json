@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Flood Determination",
+     "intframework__External_Id__c": "Flood_Determination",
+     "intframework__Release_Checksum__c": "da2b390e788a08d8d84c087197dbabf023fbce90290f151cfb05f6eb8d1c065f",
+     "solcommon__Release_Checksum__c": null
+}

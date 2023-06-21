@@ -1,0 +1,28 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Front Side of Driver's License/ID",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Details of the Front Side of Driver's License/ID",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Identification_Documents"
+     },
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "afe0a8e67937333239b5ad338491511ac8ac3ceff8a7a778fb7197ab7115f9af",
+     "clcommon__Required__c": true,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Front_Side_of_Driver_s_License_ID",
+     "genesis__Object_Type__c": "clcommon__Party__c"
+}

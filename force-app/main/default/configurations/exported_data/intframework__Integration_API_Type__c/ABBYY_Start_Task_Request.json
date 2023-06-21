@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "ABBYY Start Task Request",
+     "intframework__External_Id__c": "ABBYY_Start_Task_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "OCR"
+     },
+     "intframework__Release_Checksum__c": "8c0e02cf006a2eda0721b28a83e4ddb4adf327e1dfb781d10d6bbffc5d7db626",
+     "solcommon__Release_Checksum__c": null
+}

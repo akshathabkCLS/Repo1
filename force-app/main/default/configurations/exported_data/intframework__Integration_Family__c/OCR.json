@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "OCR",
+     "intframework__External_Id__c": "OCR",
+     "intframework__Release_Checksum__c": "09519f50be36b3e95cd88c8c26533d454b0e60e42655d7e1de94fc008a458068",
+     "solcommon__Release_Checksum__c": null
+}

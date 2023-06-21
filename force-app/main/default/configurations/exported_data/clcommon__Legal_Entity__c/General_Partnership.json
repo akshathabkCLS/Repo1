@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "General Partnership",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "7ad62b78282c6a963a5fd9180ffe0d729394c624229289a261f0e493e89356cf",
+     "genesis__External_Id__c": "General_Partnership",
+     "solcommon__Release_Checksum__c": null
+}

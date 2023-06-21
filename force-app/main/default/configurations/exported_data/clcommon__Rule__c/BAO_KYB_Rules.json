@@ -1,0 +1,195 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "BAO KYB Rules",
+     "clcommon__Document_Definition__r": null,
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "BAO_KYB_Rules",
+     "clcommon__Object_Type__c": "clcommon__Party__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "ff1d785f626563ffff19d056a94c6f4106f93885d2687b685f6522c4bf1eaa54",
+     "clcommon__Rule_Json__c": {
+          "abortQueueExecutionOnFailure": null,
+          "category": "BAO KYB Rules",
+          "criteria": [
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_requested_bao__c",
+                    "fieldName": "KYB Requested BAO",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "TRUE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$1",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__name_mismatch_indicator__c",
+                    "fieldName": "Name Mismatch Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$2",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__address_mismatch_indicator__c",
+                    "fieldName": "Address Mismatch Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$3",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__phone_number_mismatch_indicator__c",
+                    "fieldName": "Phone Number Mismatch Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$4",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__residential_business_indicator__c",
+                    "fieldName": "Residential Business Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "TRUE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$5",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__fein_mismatch_indicator__c",
+                    "fieldName": "FEIN Mismatch Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$6",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__global_watchlist_indicator__c",
+                    "fieldName": "Global Watchlist Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$7",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__tin_mismatch_indicator__c",
+                    "fieldName": "TIN Mismatch Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$8",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "oao__kyb_fraud_bao__r.intdm__ofac_indicator__c",
+                    "fieldName": "OFAC Indicator",
+                    "fieldType": "BOOLEAN",
+                    "matchingType": "==",
+                    "matchingValue": "FALSE",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$9",
+                    "type": "Expression"
+               }
+          ],
+          "enabled": null,
+          "evaluationExpression": "$1&&$2&&$3&&$4&&$5&&$6&&$7&&$8&&$9",
+          "executeActions": null,
+          "failureActions": [
+               {
+                    "actionName": "Action2",
+                    "additionalParams": "{\"Action type\":\"false\"}",
+                    "apexClassName": "oao.PartyKYBVerificationBAO",
+                    "priority": null,
+                    "type": "Apex"
+               }
+          ],
+          "failureMessage": "Rule Evaluation Failed for rule : BAO KYB Rules",
+          "objectType": "clcommon__Party__c",
+          "parentRecordId": null,
+          "parentRuleID": null,
+          "priority": 1,
+          "ruleName": "BAO KYB Rules",
+          "saveRuleClass": null,
+          "sObjectName": "",
+          "successActions": [
+               {
+                    "actionName": "Action1",
+                    "additionalParams": "{\"Action type\":\"true\"}",
+                    "apexClassName": "oao.PartyKYBVerificationBAO",
+                    "priority": null,
+                    "type": "Apex"
+               }
+          ],
+          "successMessage": "Rule Evaluation Passed for rule : BAO KYB Rules",
+          "validationClassName": null
+     },
+     "clcommon__Rule_Priority__c": 1,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "BAO_KYB_Rules"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

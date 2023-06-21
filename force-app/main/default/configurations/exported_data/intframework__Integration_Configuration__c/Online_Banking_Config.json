@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Configuration__c"
+     },
+     "Name": "Online Banking Config",
+     "intframework__Authentication_Named_Credential__c": null,
+     "intframework__External_Id__c": "Online_Banking_Config",
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "Q2_OLB"
+     },
+     "intframework__Release_Checksum__c": "f7199606eed65cad55f51df0929a1f1e4ebffdfa7f7453f4e1581b649dbee700",
+     "intframework__Top_Level_UI_Page_Name__c": null,
+     "intframework__Top_Level_UI_Page_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

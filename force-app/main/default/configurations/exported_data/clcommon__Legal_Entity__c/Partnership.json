@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Partnership",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "8f80ff86b338e0d72b70a67202ffe1c8623d6e1a12a35f74b0b9955161c5320f",
+     "genesis__External_Id__c": "Partnership",
+     "solcommon__Release_Checksum__c": null
+}

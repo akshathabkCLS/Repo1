@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Create Transaction",
+     "intframework__External_Id__c": "Create_Transaction",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Funding"
+     },
+     "intframework__Release_Checksum__c": "0133f96fcb1f3a0c5fae518067e993a2e0f9ef871cc7f2aeb372ff872866cf2a",
+     "solcommon__Release_Checksum__c": null
+}

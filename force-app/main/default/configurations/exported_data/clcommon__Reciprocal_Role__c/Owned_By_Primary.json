@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Owned By",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Business_Individual"
+     },
+     "clcommon__External_ID__c": "Owned_By_Primary",
+     "clcommon__Inverse_Role__c": "Primary",
+     "clcommon__Release_Checksum__c": "4d7ffe6a444387045e11bf4666d51f558dbd56586afc5cd93d4a7072e48072b5",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

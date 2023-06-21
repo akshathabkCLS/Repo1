@@ -1,0 +1,140 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "Partnership Agreement Rule",
+     "clcommon__Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Partnership_Agreement"
+     },
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "Partnership_Agreement_Rule",
+     "clcommon__Object_Type__c": "clcommon__Party__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "6005d67eff9c99d1bec6119e8e6302af3cfe4b251159b88055450bd04dd9fc2d",
+     "clcommon__Rule_Json__c": {
+          "abortQueueExecutionOnFailure": null,
+          "category": "DocumentDefinition",
+          "criteria": [
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "clcommon__type__r.name",
+                    "fieldName": "Party Type Name",
+                    "fieldType": "STRING",
+                    "matchingType": "==",
+                    "matchingValue": "BUSINESS",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$1",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "genesis__application__r.genesis__account__r.oao__business_category__c",
+                    "fieldName": "Business Category",
+                    "fieldType": "PICKLIST",
+                    "matchingType": "==",
+                    "matchingValue": "Partnership",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$2",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "genesis__application__r.RecordType.name",
+                    "fieldName": "Name",
+                    "fieldType": "STRING",
+                    "matchingType": "==",
+                    "matchingValue": "Package",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$3",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "genesis__application__r.genesis__cl_product__r.clcommon__product_name__c",
+                    "fieldName": "Product Name",
+                    "fieldType": "STRING",
+                    "matchingType": "==",
+                    "matchingValue": "Business Account Opening Package",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$4",
+                    "type": "Expression"
+               },
+               {
+                    "additionalParams": null,
+                    "apexClassName": null,
+                    "criterionName": null,
+                    "fieldAPIName": "genesis__application__r.genesis__account__r.oao__business_sub_category_type__c",
+                    "fieldName": "Business Sub Category",
+                    "fieldType": "PICKLIST",
+                    "matchingType": "==",
+                    "matchingValue": "Partnership",
+                    "maximumValue": "",
+                    "minimumValue": "",
+                    "relatedObject": "clcommon__Party__c",
+                    "sequence": "$5",
+                    "type": "Expression"
+               }
+          ],
+          "enabled": null,
+          "evaluationExpression": "$1&&$2&&$3&&$4&&$5",
+          "executeActions": null,
+          "failureActions": [
+               {
+                    "actionName": "Action2",
+                    "additionalParams": "{\"Action type\":\"Failure\"}",
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "priority": null,
+                    "type": "Apex"
+               }
+          ],
+          "failureMessage": "Rule Evaluation Failed for rule : Partnership Agreement Rule",
+          "objectType": "clcommon__Party__c",
+          "parentRecordId": "a1T8V00000B4EpOUAV",
+          "parentRuleID": null,
+          "priority": 6,
+          "ruleName": "Partnership Agreement Rule",
+          "saveRuleClass": null,
+          "sObjectName": "clcommon__Document_Definition__c",
+          "successActions": [
+               {
+                    "actionName": "Action1",
+                    "additionalParams": "{\"Action type\":\"Success\"}",
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "priority": null,
+                    "type": "Apex"
+               }
+          ],
+          "successMessage": "Rule Evaluation Passed for rule : Partnership Agreement Rule",
+          "validationClassName": "DocumentDefinitionPreSaveValidation"
+     },
+     "clcommon__Rule_Priority__c": 2,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "DocumentDefinition"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

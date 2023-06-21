@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "clcommon__Asset_Class__c"
+     },
+     "Name": "Commercial Secured-Review",
+     "clcommon__Asset_Category__c": "Commercial Loans",
+     "clcommon__Asset_Class_API_Name__c": null,
+     "clcommon__External_ID__c": "Commercial_Secured_Review",
+     "clcommon__Release_Checksum__c": "ac47861405877393340f3ae7f82e5118124f12aa8af17a5699e53bb9ef224a3b",
+     "genesis__UUX_Customer__c": true,
+     "solcommon__Release_Checksum__c": null,
+     "oao__Active_Product_Type__c": false,
+     "oao__Multiselect__c": false,
+     "oao__Number_of_Products__c": null,
+     "oao__Product_Image__c": null,
+     "oao__Received_From_Gro__c": false,
+     "oao__Sequence__c": null
+}

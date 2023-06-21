@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "BENEFICIAL OWNER",
+     "clcommon__External_ID__c": "BENEFICIAL_OWNER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": {
+          "attributes": {
+               "type": "clcommon__Reciprocal_Role__c"
+          },
+          "clcommon__External_ID__c": "Owned_By_Beneficial_Owner"
+     },
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "eb8907ffd332e5d2faeeaa72df58769f52805a76b1cb775e4840eba3c31e5e2e",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

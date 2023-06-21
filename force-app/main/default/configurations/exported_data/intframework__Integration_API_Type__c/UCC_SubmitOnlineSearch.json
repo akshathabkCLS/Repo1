@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "UCC SubmitOnlineSearch",
+     "intframework__External_Id__c": "UCC_SubmitOnlineSearch",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "UCC"
+     },
+     "intframework__Release_Checksum__c": "2c8640484b8e9587b150eb4dacb71f659431624bf36672ddbe6ee6d0c8abf031",
+     "solcommon__Release_Checksum__c": null
+}

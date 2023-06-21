@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Get Enhanced Income Statement",
+     "intframework__External_Id__c": "Get_Enhanced_Income_Statement",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Accounting_Data"
+     },
+     "intframework__Release_Checksum__c": "3a12a31a443045fc327e11e89b55d60e72e2228e161a9a497d7c52ef3bba7e08",
+     "solcommon__Release_Checksum__c": null
+}

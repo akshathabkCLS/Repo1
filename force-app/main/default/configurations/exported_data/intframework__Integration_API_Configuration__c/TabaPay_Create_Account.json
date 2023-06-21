@@ -1,0 +1,127 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "TabaPay Create Account",
+     "intframework__API_Endpoint__c": "accounts",
+     "intframework__API_Named_Credential__c": "TabaPay",
+     "intframework__Adapter_Class_Name__c": "oao.TabaPayCreateAccountAdapter",
+     "intframework__Additional_Header_Parameters__c": {
+          "Authorization": "Bearer llEO0n2NWAKP0Vi09sSyT8k1sKj71xNU2A"
+     },
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "TabaPay_Create_Account",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "Create_Account"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "TabaPay_Funding_Config"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Funding"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "TabaPay"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 0,
+     "intframework__Release_Checksum__c": "18f03a45967470d29ea2a2273030107c85063c87d59ab21f942b9f24b3107ff9",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "TabaPay",
+               "useRequestGenerator": true,
+               "staticParameters": [],
+               "filters": [
+                    {
+                         "objectAPI": "oao__Funding_Detail__c",
+                         "objectAlias": "card",
+                         "fields": [
+                              {
+                                   "externalField": "token",
+                                   "fieldAPI": "oao__Card_Token__c"
+                              }
+                         ],
+                         "whereClause": "oao__Application__c = :recordId"
+                    },
+                    {
+                         "objectAPI": "oao__Funding_Detail__c",
+                         "objectAlias": "cardRefrence",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "fields": [
+                              {
+                                   "externalField": "referenceID",
+                                   "fieldAPI": "oao__Application__c"
+                              }
+                         ],
+                         "whereClause": "oao__Application__c = :recordId"
+                    },
+                    {
+                         "objectAPI": "Contact",
+                         "objectAlias": "owner.name",
+                         "fields": [
+                              {
+                                   "externalField": "first",
+                                   "fieldAPI": "FirstName"
+                              },
+                              {
+                                   "externalField": "last",
+                                   "fieldAPI": "LastName"
+                              }
+                         ],
+                         "whereClause": "id = :contactId"
+                    }
+               ]
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "True",
+               "PublishAsJSON": "True"
+          },
+          "DMLOperations": [
+               {
+                    "dmlOperation": "Update",
+                    "objectMappings": [
+                         {
+                              "objectAPI": "oao__Funding_Detail__c",
+                              "fields": [
+                                   {
+                                        "externalField": "accountID",
+                                        "fieldAPI": "oao__TabaPay_Account_ID__c"
+                                   }
+                              ],
+                              "whereClause": "oao__Application__c = :recordId"
+                         }
+                    ]
+               }
+          ]
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": null,
+     "intframework__UI_Page_Type__c": null,
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}

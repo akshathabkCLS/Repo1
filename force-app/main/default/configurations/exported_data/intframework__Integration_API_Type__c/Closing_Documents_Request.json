@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Closing Documents Request",
+     "intframework__External_Id__c": "Closing_Documents_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Documents_And_Disclosures"
+     },
+     "intframework__Release_Checksum__c": "62b6f47c2c1d2af3d3a60a65866b481ef6952703471f477cae89cab4989af0ea",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,74 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "Fetch Disclosure Documents",
+     "intframework__API_Endpoint__c": "/vfi_stage/q2-gro-core-api-stg/application/v1/disclosureDocument",
+     "intframework__API_Named_Credential__c": null,
+     "intframework__Adapter_Class_Name__c": "oao.DisclosureDocumentAdapter",
+     "intframework__Additional_Header_Parameters__c": null,
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "Fetch_Disclosure_Documents",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "DisclosureDocuments"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "DisclosureDocuments"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "AOGroService"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "DisclosureDocuments"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 0,
+     "intframework__Release_Checksum__c": "82b0385e6854b8ec1aa141c7c564714c75f57456917b5a25112146ef43b3d4ee",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "AOGroService",
+               "dynamicDataParameters": [
+                    {
+                         "externalField": "listOfProducts"
+                    }
+               ],
+               "filters": [],
+               "staticParameters": []
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "False",
+               "PublishAsJSON": "False"
+          },
+          "DMLOperations": []
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": null,
+     "intframework__UI_Page_Type__c": null,
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Spouse",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Individual_Individual"
+     },
+     "clcommon__External_ID__c": "Spouse_Spouse",
+     "clcommon__Inverse_Role__c": "Spouse",
+     "clcommon__Release_Checksum__c": "46936451ea7bcf00d1edeb2a9b4d6b140c6d8e7f693e74abd81ef6b0ce7ff952",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

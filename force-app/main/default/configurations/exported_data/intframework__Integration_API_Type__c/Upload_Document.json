@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Upload Document",
+     "intframework__External_Id__c": "Upload_Document",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "KYC"
+     },
+     "intframework__Release_Checksum__c": "713c5a1ae849e9207e0eda6cb58ae7f51af6487d7ac39e138790c9b5ac068499",
+     "solcommon__Release_Checksum__c": null
+}

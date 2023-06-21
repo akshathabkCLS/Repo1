@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Funding",
+     "intframework__External_Id__c": "Funding",
+     "intframework__Release_Checksum__c": "82daac10f1f0430b6783f6c62bef7d8018eff6dd5ebd7d3b235fce1b3a8ce930",
+     "solcommon__Release_Checksum__c": null
+}

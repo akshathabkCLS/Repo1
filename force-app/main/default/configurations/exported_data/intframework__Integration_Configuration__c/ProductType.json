@@ -1,0 +1,18 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Configuration__c"
+     },
+     "Name": "ProductType",
+     "intframework__Authentication_Named_Credential__c": null,
+     "intframework__External_Id__c": "ProductType",
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "ProductType"
+     },
+     "intframework__Release_Checksum__c": "82ef5f0cd834a0787f70ae377550a8e4c52a0f11b2eb0ab2702d6ed67658f829",
+     "intframework__Top_Level_UI_Page_Name__c": null,
+     "intframework__Top_Level_UI_Page_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Coresmen",
+     "intframework__External_Id__c": "Coresmen",
+     "intframework__Release_Checksum__c": "4e1f5c29ad2b722405214bd858e4aed9b003dc07a3c051f4fb971b78ec006553",
+     "solcommon__Release_Checksum__c": null
+}

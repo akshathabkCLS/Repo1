@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "VENDOR",
+     "clcommon__External_ID__c": "VENDOR",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "1d532e85bbf0f8d1a1f5f857416c6dd89239fa0cf4d2c53de80d51047c1853d5",
+     "clcommon__Role__c": "Vendor",
+     "solcommon__Release_Checksum__c": null
+}

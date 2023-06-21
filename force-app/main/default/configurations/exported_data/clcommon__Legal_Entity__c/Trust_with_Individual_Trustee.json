@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Trust with Individual Trustee",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "a7261d8548331a3001bff3947b41b0c67aefbed2def212342c390e56de6d72a1",
+     "genesis__External_Id__c": "Trust_with_Individual_Trustee",
+     "solcommon__Release_Checksum__c": null
+}

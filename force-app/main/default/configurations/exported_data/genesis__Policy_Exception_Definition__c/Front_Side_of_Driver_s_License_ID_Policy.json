@@ -1,0 +1,29 @@
+{
+     "attributes": {
+          "type": "genesis__Policy_Exception_Definition__c"
+     },
+     "genesis__Active__c": true,
+     "genesis__Condition_Type__c": "Document",
+     "genesis__Description__c": "Front Side of Driver's License/ID Policy",
+     "genesis__Enable_Override__c": true,
+     "genesis__Evaluation_Expression__c": "1",
+     "genesis__External_ID__c": "Front_Side_of_Driver_s_License_ID_Policy",
+     "genesis__Object_Type__c": "clcommon__Party__c",
+     "genesis__Policy_Condition_Generation_Rule__r": {
+          "attributes": {
+               "type": "clcommon__Rule__c"
+          },
+          "clcommon__External_ID__c": "Rule_for_front_side_of_Driver_Policy"
+     },
+     "genesis__Policy_Condition_Name__c": "Front Side of Driver's License/ID Policy",
+     "genesis__Portal_Description__c": null,
+     "genesis__Portal_Title__c": null,
+     "genesis__Product_Department_Task_Association__r": null,
+     "genesis__Release_Checksum__c": "6a40df1bf3a53b7226dd57214cc29c9554981f996098b0cf3f8528ca4aed7ab5",
+     "genesis__Requires_Approval__c": false,
+     "genesis__Requires_Officer_Explanation__c": false,
+     "genesis__Type__c": null,
+     "solcommon__Portal_Description__c": null,
+     "solcommon__Portal_Title__c": null,
+     "solcommon__Release_Checksum__c": null
+}

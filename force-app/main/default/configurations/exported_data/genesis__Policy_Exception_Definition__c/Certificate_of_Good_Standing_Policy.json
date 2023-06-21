@@ -1,0 +1,29 @@
+{
+     "attributes": {
+          "type": "genesis__Policy_Exception_Definition__c"
+     },
+     "genesis__Active__c": true,
+     "genesis__Condition_Type__c": "Document",
+     "genesis__Description__c": "Certificate of Good Standing Policy",
+     "genesis__Enable_Override__c": true,
+     "genesis__Evaluation_Expression__c": "1",
+     "genesis__External_ID__c": "Certificate_of_Good_Standing_Policy",
+     "genesis__Object_Type__c": "clcommon__Party__c",
+     "genesis__Policy_Condition_Generation_Rule__r": {
+          "attributes": {
+               "type": "clcommon__Rule__c"
+          },
+          "clcommon__External_ID__c": "Certificate_of_Good_Standing_Policy_Rule"
+     },
+     "genesis__Policy_Condition_Name__c": "Certificate of Good Standing Policy",
+     "genesis__Portal_Description__c": null,
+     "genesis__Portal_Title__c": null,
+     "genesis__Product_Department_Task_Association__r": null,
+     "genesis__Release_Checksum__c": "6bb7566ab26de4b5082db40493b5f41c0fd5e0ffa46c0a34c3c1a76b5533f161",
+     "genesis__Requires_Approval__c": false,
+     "genesis__Requires_Officer_Explanation__c": false,
+     "genesis__Type__c": null,
+     "solcommon__Portal_Description__c": null,
+     "solcommon__Portal_Title__c": null,
+     "solcommon__Release_Checksum__c": null
+}

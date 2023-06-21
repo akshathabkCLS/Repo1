@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "CSI Compliance Select Documents",
+     "intframework__External_Id__c": "CSI_Compliance_Select_Documents",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Documents_And_Disclosures"
+     },
+     "intframework__Release_Checksum__c": "b3b35896102d3eef8bcc784e0055dea8dd7ef72984eca6e95a8dc5a91a99f078",
+     "solcommon__Release_Checksum__c": null
+}

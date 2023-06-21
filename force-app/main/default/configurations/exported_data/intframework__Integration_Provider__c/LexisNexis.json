@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "LexisNexis",
+     "intframework__Activator_Class_Name__c": "intadapter.LexisNexisProviderActivator",
+     "intframework__Active__c": true,
+     "intframework__External_Id__c": "LexisNexis",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "KYB"
+     },
+     "intframework__Product_Name__c": "LexisNexis",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "LexisNexis Systems",
+     "intframework__Release_Checksum__c": "f67a2b2fd9b3e876953fe2ddda01106860a1143b46ff1de7b0f78bf0122c2b8c",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

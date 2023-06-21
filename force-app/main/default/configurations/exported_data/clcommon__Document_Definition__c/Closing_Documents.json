@@ -1,0 +1,23 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Closing Documents",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Closing documents are signed at the closing, also referred to as a settlement, it is the process of bringing a loan transaction to a close.Closing documents provide final details about the loan . It includes the loan terms, projected  payments, fees and other costs. The set of closing Documents differ based on the loan type.",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": null,
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "81f68d4ad6b990ec32006d9e1ec06294e8b4f0f21e1d99544fa9d406c114e58c",
+     "clcommon__Required__c": false,
+     "clcommon__Reuse_Document__c": false,
+     "clcommon__Show_In_Portal__c": null,
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Closing_Documents",
+     "genesis__Object_Type__c": null
+}

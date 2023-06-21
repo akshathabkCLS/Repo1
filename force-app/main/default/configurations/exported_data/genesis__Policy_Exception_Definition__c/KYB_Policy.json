@@ -1,0 +1,29 @@
+{
+     "attributes": {
+          "type": "genesis__Policy_Exception_Definition__c"
+     },
+     "genesis__Active__c": true,
+     "genesis__Condition_Type__c": "Data",
+     "genesis__Description__c": "KYB Policy",
+     "genesis__Enable_Override__c": true,
+     "genesis__Evaluation_Expression__c": "1",
+     "genesis__External_ID__c": "KYB_Policy",
+     "genesis__Object_Type__c": "clcommon__Party__c",
+     "genesis__Policy_Condition_Generation_Rule__r": {
+          "attributes": {
+               "type": "clcommon__Rule__c"
+          },
+          "clcommon__External_ID__c": "Rule_for_KYB_Policy"
+     },
+     "genesis__Policy_Condition_Name__c": "KYB Policy",
+     "genesis__Portal_Description__c": null,
+     "genesis__Portal_Title__c": null,
+     "genesis__Product_Department_Task_Association__r": null,
+     "genesis__Release_Checksum__c": "5628501e17ce17a20e475fd723ddd5d349fc5b1b0b1270c2f5b1408e2c35cd6a",
+     "genesis__Requires_Approval__c": false,
+     "genesis__Requires_Officer_Explanation__c": false,
+     "genesis__Type__c": null,
+     "solcommon__Portal_Description__c": null,
+     "solcommon__Portal_Title__c": null,
+     "solcommon__Release_Checksum__c": null
+}

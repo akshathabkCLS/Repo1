@@ -1,0 +1,17 @@
+{
+     "attributes": {
+          "type": "clcommon__Reciprocal_Role__c"
+     },
+     "Name": "Parent",
+     "RecordType": {
+          "attributes": {
+               "type": "RecordType"
+          },
+          "DeveloperName": "Business_Business"
+     },
+     "clcommon__External_ID__c": "Parent_Subsidiary",
+     "clcommon__Inverse_Role__c": "Subsidiary",
+     "clcommon__Release_Checksum__c": "7d9b0f8bdbf2fe6ddc04e88a981588318b49cfd1cd2ea4427fe8b67ca794efc1",
+     "solcommon__Reciprocal_Role_Code__c": null,
+     "solcommon__Release_Checksum__c": null
+}

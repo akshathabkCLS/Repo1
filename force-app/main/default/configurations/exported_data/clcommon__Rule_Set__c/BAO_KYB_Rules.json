@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "BAO KYB Rules",
+     "clcommon__External_ID__c": "BAO_KYB_Rules",
+     "clcommon__Function__c": null,
+     "clcommon__Logging_Enabled__c": true,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "16c9fadd93af55ec9ead40313739e0fcab2e8e7befb5fedac95145352d26a3f4",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

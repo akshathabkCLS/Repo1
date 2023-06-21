@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "LESSOR",
+     "clcommon__External_ID__c": "LESSOR",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "7360ac407a7bf6fef29f827eca440318ca2aca01d4136dea8522eb393ecea46b",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

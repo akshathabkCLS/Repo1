@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "E Sign",
+     "intframework__External_Id__c": "E_Sign",
+     "intframework__Release_Checksum__c": "97441307a75b1b3c246cc67b0e7cb708fbedb53639ac0c2a01aa00666ad78ea4",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule_Set__c"
+     },
+     "Name": "TaskCompletionConfig",
+     "clcommon__External_ID__c": "Task_Completion_Config",
+     "clcommon__Function__c": null,
+     "clcommon__Logging_Enabled__c": false,
+     "clcommon__Mode_of_Rule_Execution_On_Priority__c": null,
+     "clcommon__Release_Checksum__c": "6cb4fa1642cab6eba7bfb703edec6d11ae7c7971dee65300997e0bedeb216c1b",
+     "clcommon__Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

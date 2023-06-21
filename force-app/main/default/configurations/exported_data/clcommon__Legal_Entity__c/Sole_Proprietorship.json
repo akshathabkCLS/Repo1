@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Sole Proprietorship",
+     "clcommon__Individual__c": true,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "6c5d2a071d96870ce6ca90fb10811b1b4ce97b2661d055b843604f989352ad2a",
+     "genesis__External_Id__c": "Sole_Proprietorship",
+     "solcommon__Release_Checksum__c": null
+}

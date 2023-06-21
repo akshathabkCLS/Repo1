@@ -1,0 +1,28 @@
+{
+     "attributes": {
+          "type": "clcommon__Document_Definition__c"
+     },
+     "Name": "Rent Roll",
+     "clcommon__Active__c": true,
+     "clcommon__Child_Object_API_Name__c": null,
+     "clcommon__Description__c": "Document Definition for rent roll csv upload",
+     "clcommon__Generation_Status__c": null,
+     "clcommon__Parent_Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Real_Estate_Documents"
+     },
+     "clcommon__Priority__c": "Normal",
+     "clcommon__Release_Checksum__c": "cf168edc3c3fd7d38ec8fa9314b72c3ef6b017df01edaddc7f7b802c7a24bc4d",
+     "clcommon__Required__c": false,
+     "clcommon__Reuse_Document__c": true,
+     "clcommon__Show_In_Portal__c": "UPLOAD_VIA_PORTAL",
+     "intdm__OCR_Application_ID__c": null,
+     "intdm__OCR_Application_Name__c": null,
+     "intdm__OCR_Application_Token__c": null,
+     "intdm__OCR_Enabled__c": false,
+     "intdm__OCR_Verification_Required__c": false,
+     "genesis__External_ID__c": "Rent_Roll",
+     "genesis__Object_Type__c": "genesis__Application_Collateral__c"
+}

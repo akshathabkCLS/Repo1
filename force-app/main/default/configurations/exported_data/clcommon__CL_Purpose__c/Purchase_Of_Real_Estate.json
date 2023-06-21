@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Purchase of Real Estate",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Purchase_Of_Real_Estate",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "ddf3cfd749f2b4702182a2a0ee06ca5a5b0fc473b5c35d15719c6d4ff51dfb73",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

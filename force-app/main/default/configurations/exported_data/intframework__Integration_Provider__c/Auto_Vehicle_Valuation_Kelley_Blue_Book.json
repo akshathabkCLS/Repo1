@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "Kelley Blue Book",
+     "intframework__Activator_Class_Name__c": "intadapter.AutoVehicleValuationActivator",
+     "intframework__Active__c": false,
+     "intframework__External_Id__c": "Auto_Vehicle_Valuation_Kelley_Blue_Book",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Auto_Vehicle_Valuation"
+     },
+     "intframework__Product_Name__c": "Kelley Blue Book",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "Kelley Blue Book Systems",
+     "intframework__Release_Checksum__c": "d5645c8e915e290d12a613b88a61564c7b3a2aa24294902130b9721fd89ec52b",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

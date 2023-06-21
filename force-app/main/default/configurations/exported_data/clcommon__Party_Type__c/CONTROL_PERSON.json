@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "CONTROL PERSON",
+     "clcommon__External_ID__c": "CONTROL_PERSON",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": {
+          "attributes": {
+               "type": "clcommon__Reciprocal_Role__c"
+          },
+          "clcommon__External_ID__c": "Controlled_By_Control_Person"
+     },
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "3248c1ae9180d72983d676a512f43f16714ca2e3d047cd7059bc9bebb85b954f",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

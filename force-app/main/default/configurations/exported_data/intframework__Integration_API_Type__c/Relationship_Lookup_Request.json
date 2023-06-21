@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Relationship Lookup Request",
+     "intframework__External_Id__c": "Relationship_Lookup_Request",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Coresmen"
+     },
+     "intframework__Release_Checksum__c": "fe649408283391171903f1a107fbd9b44a7d87afa20cae52cc95581314d1fb46",
+     "solcommon__Release_Checksum__c": null
+}

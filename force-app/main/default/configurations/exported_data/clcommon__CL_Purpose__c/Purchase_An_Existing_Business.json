@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Purchase an Existing Business",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Purchase_An_Existing_Business",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "04a9918b170a2f724b233b0f59fd194111f2e294efec581d532de7583d6369c4",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

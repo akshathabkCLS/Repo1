@@ -1,0 +1,13 @@
+{
+     "attributes": {
+          "type": "clcommon__CL_Purpose__c"
+     },
+     "Name": "Business Improvements",
+     "clcommon__Description__c": null,
+     "clcommon__External_ID__c": "Business_Improvements",
+     "clcommon__Primary_Purpose__r": null,
+     "clcommon__Purpose_Code__c": null,
+     "clcommon__Release_Checksum__c": "097ac502ebec4d970633eb43909ab8706c12fa7c25308323ab220823816003a6",
+     "intdm__Purpose_Type__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Limited Partnership",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "a3c1212e46ed68eb518c5624e2a779bfd4c6b3950ab0e18553c3f97135e4db9a",
+     "genesis__External_Id__c": "Limited_Partnership",
+     "solcommon__Release_Checksum__c": null
+}

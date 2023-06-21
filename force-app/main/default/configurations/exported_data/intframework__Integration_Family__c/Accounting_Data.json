@@ -1,0 +1,9 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Family__c"
+     },
+     "Name": "Accounting Data",
+     "intframework__External_Id__c": "Accounting_Data",
+     "intframework__Release_Checksum__c": "1ab56134ae73676ffd092abf9758e67f704bb2a26f1bf666483a169d84dabfe3",
+     "solcommon__Release_Checksum__c": null
+}

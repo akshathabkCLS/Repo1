@@ -1,0 +1,16 @@
+{
+     "attributes": {
+          "type": "clcommon__Party_Type__c"
+     },
+     "Name": "BORROWER",
+     "clcommon__External_ID__c": "BORROWER",
+     "clcommon__External_Party_Type__c": null,
+     "clcommon__Notice_of_Credit_Decision__c": false,
+     "clcommon__Party_Type_Code__c": null,
+     "clcommon__Reciprocal_Role__r": null,
+     "clcommon__Related_Business_Entity__c": false,
+     "clcommon__Related_Individual__c": false,
+     "clcommon__Release_Checksum__c": "ec5bfb6e4637c244e562a8f961acfb424bbfc9aa599078c9b5d8c2dcbee38bd4",
+     "clcommon__Role__c": "Application",
+     "solcommon__Release_Checksum__c": null
+}

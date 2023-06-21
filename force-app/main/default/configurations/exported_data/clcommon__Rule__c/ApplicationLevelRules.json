@@ -1,0 +1,84 @@
+{
+     "attributes": {
+          "type": "clcommon__Rule__c"
+     },
+     "Name": "ApplicationLevelRules",
+     "clcommon__Document_Definition__r": {
+          "attributes": {
+               "type": "clcommon__Document_Definition__c"
+          },
+          "genesis__External_ID__c": "Application_Submission_Documents"
+     },
+     "clcommon__Enabled__c": true,
+     "clcommon__External_ID__c": "ApplicationLevelRules",
+     "clcommon__Object_Type__c": "genesis__Applications__c",
+     "clcommon__Parent_Record_Id__c": null,
+     "clcommon__Parent_Rule__r": null,
+     "clcommon__Release_Checksum__c": "d13b42c5526704c43f3be35e3625f811265e0dc1b173de080abe4544c8e5f6da",
+     "clcommon__Rule_Json__c": {
+          "validationClassName": "DocumentDefinitionPreSaveValidation",
+          "successMessage": "Rule Evaluation Passed for rule : Application.",
+          "successActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "additionalParams": "{\"Action type\":\"Success\"}",
+                    "actionName": "SuccessActionForApplication"
+               }
+          ],
+          "sObjectName": "clcommon__Document_Definition__c",
+          "saveRuleClass": null,
+          "ruleName": "ApplicationLevelRules",
+          "priority": 1,
+          "parentRuleID": null,
+          "parentRecordId": "a1TDp0000001QGmMAM",
+          "objectType": "genesis__Applications__c",
+          "failureMessage": "Rule Evaluation Failed for rule : Application.",
+          "failureActions": [
+               {
+                    "type": "Apex",
+                    "priority": null,
+                    "apexClassName": "genesis.DocumentCategoryGenerateAction",
+                    "additionalParams": "{\"Action type\":\"Failure\"}",
+                    "actionName": "FailureActionAApplication"
+               }
+          ],
+          "externalId": null,
+          "executeActions": null,
+          "evaluationExpression": "$1",
+          "enabled": null,
+          "criteria": [
+               {
+                    "useBusinessDays": null,
+                    "type": "Expression",
+                    "sequence": "$1",
+                    "relatedObject": "genesis__Applications__c",
+                    "offsetValue": null,
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "matchingValue": "0",
+                    "matchingType": ">",
+                    "isFieldComparison": null,
+                    "fieldType": "DOUBLE",
+                    "fieldName": "Loan Amount",
+                    "fieldAPIName": "genesis__Loan_Amount__c",
+                    "criterionName": null,
+                    "apexClassName": "",
+                    "additionalParams": ""
+               }
+          ],
+          "category": "DocumentDefinition",
+          "abortQueueExecutionOnFailure": null
+     },
+     "clcommon__Rule_Priority__c": 1,
+     "clcommon__Rule_Set__r": {
+          "attributes": {
+               "type": "clcommon__Rule_Set__c"
+          },
+          "clcommon__External_ID__c": "Document_Definition"
+     },
+     "solcommon__CL_Product__r": null,
+     "solcommon__Release_Checksum__c": null,
+     "solcommon__Type__c": null
+}

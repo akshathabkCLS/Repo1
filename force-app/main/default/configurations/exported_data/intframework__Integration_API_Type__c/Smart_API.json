@@ -1,0 +1,15 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Type__c"
+     },
+     "Name": "Smart API",
+     "intframework__External_Id__c": "Smart_API",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Consumer_Credit"
+     },
+     "intframework__Release_Checksum__c": "ad26a327d0561fd611baffebf3f87c4c0bf64ebd95f3c88c50579ba9e42d2181",
+     "solcommon__Release_Checksum__c": null
+}

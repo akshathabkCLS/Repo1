@@ -1,0 +1,21 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_Provider__c"
+     },
+     "Name": "Experian Consumer Credit",
+     "intframework__Activator_Class_Name__c": "intadapter.ExperianCreditProfileActivator",
+     "intframework__Active__c": false,
+     "intframework__External_Id__c": "Consumer_Credit_Experian_Consumer_Credit",
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Consumer_Credit"
+     },
+     "intframework__Product_Name__c": "Experian Consumer Credit",
+     "intframework__Product_Version__c": "1.0",
+     "intframework__Provider_Name__c": "Experian Consumer Credit Systems",
+     "intframework__Release_Checksum__c": "3581f2282d41fd1e8eae6cab6a78639a2e3ebe06d5ac1b7e36dde01831762f41",
+     "intframework__Support_Type__c": "Out-of-the-Box",
+     "solcommon__Release_Checksum__c": null
+}

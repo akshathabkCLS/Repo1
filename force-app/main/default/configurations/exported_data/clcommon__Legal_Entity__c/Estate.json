@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Estate",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "6a14a25e3eadbc2edff06862c3555f622b23908cc062f0b0f2edb61f28073814",
+     "genesis__External_Id__c": "Estate",
+     "solcommon__Release_Checksum__c": null
+}

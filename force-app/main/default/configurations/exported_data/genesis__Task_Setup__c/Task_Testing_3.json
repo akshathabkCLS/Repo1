@@ -1,0 +1,23 @@
+{
+     "attributes": {
+          "type": "genesis__Task_Setup__c"
+     },
+     "genesis__Category__c": null,
+     "genesis__Description__c": "Task Number 3 for Testing",
+     "genesis__Evaluation_Expression_For_Execution__c": null,
+     "genesis__External_ID__c": "Task_Testing_3",
+     "genesis__Generate_With_Policy_Conditions__c": false,
+     "genesis__Group_At_Asset_Class__c": false,
+     "genesis__Is_Parallel__c": false,
+     "genesis__Mandatory__c": false,
+     "genesis__Next_Task_Name__c": null,
+     "genesis__Object_Type__c": "genesis__applications__c",
+     "genesis__Priority__c": "Normal",
+     "genesis__Release_Checksum__c": "99f95b52dc77be7b40f34f5406354907013b78d5ddc5d48cecabc06e996c26a9",
+     "genesis__Retain_Completed_Task__c": false,
+     "genesis__Task_Completion_Rule__r": null,
+     "genesis__Task_Name__c": "Task Testing 3",
+     "genesis__Type__c": "PULL CREDIT",
+     "genesis__days_until_due_date__c": null,
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,12 @@
+{
+     "attributes": {
+          "type": "clcommon__Legal_Entity__c"
+     },
+     "Name": "Business",
+     "clcommon__Individual__c": false,
+     "clcommon__Legal_Entity_Type_Code__c": null,
+     "clcommon__Legal_Entity_Type__c": null,
+     "clcommon__Release_Checksum__c": "038af976855bf1de358ba6e27fa884d87dd85f3d62e5095b5fcd71a345707da3",
+     "genesis__External_Id__c": "Business",
+     "solcommon__Release_Checksum__c": null
+}

@@ -1,0 +1,560 @@
+{
+     "attributes": {
+          "type": "intframework__Integration_API_Configuration__c"
+     },
+     "Name": "Alloy Create Journey Application",
+     "intframework__API_Endpoint__c": "journeys/J-kFaiaedyfVcRUpBFil9B/applications",
+     "intframework__API_Named_Credential__c": "Alloy",
+     "intframework__Adapter_Class_Name__c": "oao.CreateJourneyApplicationAdapter",
+     "intframework__Additional_Header_Parameters__c": null,
+     "intframework__Disable_Integration_Logs__c": false,
+     "intframework__Execution_Priority__c": 1,
+     "intframework__External_Id__c": "Alloy_Create_Journey_Application",
+     "intframework__File_Extension__c": null,
+     "intframework__File_Name_Prefix__c": null,
+     "intframework__Generate_File__c": false,
+     "intframework__HTTP_Content_Type__c": "application/json",
+     "intframework__HTTP_Method__c": "POST",
+     "intframework__Integration_API_Type__r": {
+          "attributes": {
+               "type": "intframework__Integration_API_Type__c"
+          },
+          "intframework__External_Id__c": "Create_Journey_Application"
+     },
+     "intframework__Integration_Configuration__r": {
+          "attributes": {
+               "type": "intframework__Integration_Configuration__c"
+          },
+          "intframework__External_Id__c": "Alloy_Integration_Config"
+     },
+     "intframework__Integration_Family__r": {
+          "attributes": {
+               "type": "intframework__Integration_Family__c"
+          },
+          "intframework__External_Id__c": "Alloy_KYC_KYB"
+     },
+     "intframework__Integration_Provider__r": {
+          "attributes": {
+               "type": "intframework__Integration_Provider__c"
+          },
+          "intframework__External_Id__c": "Q2_Alloy"
+     },
+     "intframework__Log_Filter__c": null,
+     "intframework__Log_Request_Response__c": false,
+     "intframework__Long_Running_Operation__c": false,
+     "intframework__Number_Of_Retries__c": 0,
+     "intframework__Release_Checksum__c": "57ff41e5b11df0676381e4b104df45cc0ed2275d89d8ad5e3b48883ca1977f09",
+     "intframework__Request_Mapping__c": {
+          "thirdPartySystem": {
+               "name": "Alloy",
+               "useRequestGenerator": true,
+               "staticParameters": [
+                    {
+                         "externalField": "entities[0]$$branch_name",
+                         "value": "persons"
+                    },
+                    {
+                         "externalField": "entities[0]$$entity_type",
+                         "value": "person"
+                    },
+                    {
+                         "externalField": "entities[1]$$branch_name",
+                         "value": "business"
+                    },
+                    {
+                         "externalField": "entities[1]$$entity_type",
+                         "value": "business"
+                    },
+                    {
+                         "externalField": "do_await_additional_entities",
+                         "value": "true"
+                    },
+                    {
+                         "externalField": "entities[1]$$data$$representatives[0]$$type",
+                         "value": "principal_owner"
+                    },
+                    {
+                         "externalField": "entities[1]$$data$$representatives[0]$$addresses[0]$$type",
+                         "value": "primary"
+                    },
+                    {
+                         "externalField": "entities[1]$$data$$addresses[0]$$type",
+                         "value": "business_primary"
+                    }
+               ],
+               "filters": [
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "entities[0]",
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "external_entity_id",
+                                   "fieldAPI": "clcommon__Account__c"
+                              },
+                              {
+                                   "externalField": "data$$address_line_1",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$address_line_2",
+                                   "fieldAPI": "clcommon__Contact__r.oao__Other_Address_Second_Line__c"
+                              },
+                              {
+                                   "externalField": "data$$address_city",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$address_state",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStateCode"
+                              },
+                              {
+                                   "externalField": "data$$address_postal_code",
+                                   "fieldAPI": "clcommon__Contact__r.OtherPostalCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$address_country_code",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$name_first",
+                                   "fieldAPI": "clcommon__Contact__r.FirstName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$name_last",
+                                   "fieldAPI": "clcommon__Contact__r.LastName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$name_middle",
+                                   "fieldAPI": "clcommon__Contact__r.MiddleName"
+                              },
+                              {
+                                   "externalField": "data$$phone_number",
+                                   "fieldAPI": "clcommon__Contact__r.oao__Formatted_Mobile__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$email_address",
+                                   "fieldAPI": "clcommon__Contact__r.Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$birth_date",
+                                   "fieldAPI": "clcommon__Contact__r.Birthdate"
+                              },
+                              {
+                                   "externalField": "data$$document_ssn",
+                                   "fieldAPI": "clcommon__Contact__r.ints__Social_Security_Number__c"
+                              },
+                              {
+                                   "externalField": "data$$iovation_blackbox",
+                                   "fieldAPI": "oao__Iovation_Blackbox_Token__c",
+                                   "isMandatory": false
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId AND clcommon__Type__r.Name = 'PRIMARY'"
+                    },
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "entities[1]",
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "external_entity_id",
+                                   "fieldAPI": "clcommon__Account__c"
+                              },
+                              {
+                                   "externalField": "data$$business_name",
+                                   "fieldAPI": "clcommon__Account__r.Name",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_phone_number",
+                                   "fieldAPI": "clcommon__Account__r.Phone",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_federal_ein",
+                                   "fieldAPI": "clcommon__Account__r.genesis__Business_Information__r.genesis__Tax_ID__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_alternate_name",
+                                   "fieldAPI": "clcommon__Account__r.oao__Business_DBA_Name__c"
+                              },
+                              {
+                                   "externalField": "data$$business_address_line_1",
+                                   "fieldAPI": "clcommon__Account__r.BillingStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_address_line_2",
+                                   "fieldAPI": "clcommon__Account__r.oao__Billing_Address_Second_Line__c"
+                              },
+                              {
+                                   "externalField": "data$$business_address_city",
+                                   "fieldAPI": "clcommon__Account__r.BillingCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_address_state",
+                                   "fieldAPI": "clcommon__Account__r.BillingStateCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_address_country_code",
+                                   "fieldAPI": "clcommon__Account__r.BillingCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$business_address_postal_code",
+                                   "fieldAPI": "clcommon__Account__r.BillingPostalCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$line_1",
+                                   "fieldAPI": "clcommon__Account__r.BillingStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$line_2",
+                                   "fieldAPI": "clcommon__Account__r.oao__Billing_Address_Second_Line__c"
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$city",
+                                   "fieldAPI": "clcommon__Account__r.BillingCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$state",
+                                   "fieldAPI": "clcommon__Account__r.BillingStateCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$country_code",
+                                   "fieldAPI": "clcommon__Account__r.BillingCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "data$$addresses[0]$$postal_code",
+                                   "fieldAPI": "clcommon__Account__r.BillingPostalCode",
+                                   "isMandatory": true
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId And clcommon__Type__r.Name = 'BUSINESS'"
+                    },
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "primaryPartyDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "address_city",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "address_country_code",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "address_line_1",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "address_line_2",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.oao__Other_Address_Second_Line__c"
+                              },
+                              {
+                                   "externalField": "address_postal_code",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.OtherPostalCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "address_state",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStateCode"
+                              },
+                              {
+                                   "externalField": "name_first",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.FirstName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "name_last",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.LastName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "name_middle",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.MiddleName"
+                              },
+                              {
+                                   "externalField": "email_address",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "phone_number",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.oao__Formatted_Mobile__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "birth_date",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.Birthdate"
+                              },
+                              {
+                                   "externalField": "document_ssn",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "clcommon__Contact__r.ints__Social_Security_Number__c"
+                              },
+                              {
+                                   "externalField": "name_first",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.FirstName"
+                              },
+                              {
+                                   "externalField": "name_last",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.LastName",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "name_middle",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.MiddleName"
+                              },
+                              {
+                                   "externalField": "phone_number",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.MobilePhone",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "email_address",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.Email",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "birth_date",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.Birthdate",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "document_ssn",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "clcommon__Contact__r.ints__Social_Security_Number__c",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "line_1",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStreet",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "line_2",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.oao__Other_Address_Second_Line__c"
+                              },
+                              {
+                                   "externalField": "city",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCity",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "state",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.OtherStateCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "postal_code",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.OtherPostalCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "country_code",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]$$addresses[0]",
+                                   "fieldAPI": "clcommon__Contact__r.OtherCountryCode",
+                                   "isMandatory": true
+                              },
+                              {
+                                   "externalField": "Primary_Party_Account",
+                                   "fieldAPI": "clcommon__Account__c",
+                                   "ignoreInRequest": true,
+                                   "queriesAnotherObject": "true"
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId AND clcommon__Type__r.Name = 'PRIMARY'"
+                    },
+                    {
+                         "objectAPI": "clcommon__Party__c",
+                         "objectAlias": "businessPartyDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "business_type_Name",
+                                   "fieldAPI": "clcommon__Account__r.oao__Business_Sub_Category_Type__c",
+                                   "ignoreInRequest": true,
+                                   "queriesAnotherObject": "true"
+                              }
+                         ],
+                         "whereClause": "genesis__Application__c = :appId AND clcommon__Type__r.Name = 'BUSINESS'"
+                    },
+                    {
+                         "objectAPI": "genesis__Identification_Information__c",
+                         "objectAlias": "IdentificationPassportDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "document_passport",
+                                   "objectAlias": "entities[0]$$data",
+                                   "fieldAPI": "genesis__Identification_Number__c"
+                              },
+                              {
+                                   "externalField": "document_passport_nationality",
+                                   "objectAlias": "entities[0]$$data",
+                                   "fieldAPI": "oao__Issuing_Country__c"
+                              },
+                              {
+                                   "externalField": "document_passport_expiry_date",
+                                   "objectAlias": "entities[0]$$data",
+                                   "fieldAPI": "genesis__Expiration_Date__c"
+                              },
+                              {
+                                   "externalField": "document_passport",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "genesis__Identification_Number__c"
+                              },
+                              {
+                                   "externalField": "document_passport_nationality",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "oao__Issuing_Country__c"
+                              },
+                              {
+                                   "externalField": "document_passport_expiry_date",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "genesis__Expiration_Date__c"
+                              }
+                         ],
+                         "whereClause": "genesis__Account__c = :Mapping__primaryPartyDetails__Primary_Party_Account AND genesis__Identification_Type__c = 'Passport'"
+                    },
+                    {
+                         "objectAPI": "genesis__Identification_Information__c",
+                         "objectAlias": "IdentificationLicenseDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "document_license",
+                                   "objectAlias": "entities[0]$$data",
+                                   "fieldAPI": "genesis__Identification_Number__c"
+                              },
+                              {
+                                   "externalField": "document_license_state",
+                                   "objectAlias": "entities[0]$$data",
+                                   "fieldAPI": "genesis__State_of_Issuance__c"
+                              },
+                              {
+                                   "externalField": "document_license",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "genesis__Identification_Number__c"
+                              },
+                              {
+                                   "externalField": "document_license_state",
+                                   "objectAlias": "entities[1]$$data$$representatives[0]",
+                                   "fieldAPI": "genesis__State_of_Issuance__c"
+                              }
+                         ],
+                         "whereClause": "genesis__Account__c = :Mapping__primaryPartyDetails__Primary_Party_Account AND genesis__Identification_Type__c = 'Driver\\'s License'"
+                    },
+                    {
+                         "objectAPI": "oao__Business_Category_Code__mdt",
+                         "objectAlias": "businessCodeDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "business_type",
+                                   "objectAlias": "entities[1]$$data",
+                                   "fieldAPI": "oao__Alloy_Business_Code__c",
+                                   "isMandatory": true
+                              }
+                         ],
+                         "whereClause": "oao__Business_Category_Name__c = :Mapping__businessPartyDetails__business_type_Name"
+                    },
+                    {
+                         "objectAPI": "genesis__Applications__c",
+                         "objectAlias": "applicationDetails",
+                         "ignoreObjectAliasInRequestGeneration": true,
+                         "limitTo": "1",
+                         "fields": [
+                              {
+                                   "externalField": "external_group_id",
+                                   "fieldAPI": "Id"
+                              }
+                         ],
+                         "whereClause": "Id = :appId"
+                    }
+               ]
+          }
+     },
+     "intframework__Request_Timeout__c": 120000,
+     "intframework__Response_Mapping__c": {
+          "StorageConfiguration": {
+               "StoreInDB": "True",
+               "PublishAsJSON": "True"
+          },
+          "DMLOperations": [
+               {
+                    "dmlOperation": "Update",
+                    "objectMappings": [
+                         {
+                              "objectAPI": "genesis__Applications__c",
+                              "fields": [
+                                   {
+                                        "externalField": "application_token",
+                                        "fieldAPI": "oao__Journey_Application_Token__c"
+                                   }
+                              ],
+                              "whereClause": "Id = :appId"
+                         }
+                    ]
+               }
+          ]
+     },
+     "intframework__Retry_On_Failure__c": false,
+     "intframework__Send_File__c": false,
+     "intframework__UI_Page_Name__c": null,
+     "intframework__UI_Page_Type__c": null,
+     "intframework__Use_New_Logging_Mechanism__c": false,
+     "intframework__Use_Response_Mocker__c": false,
+     "solcommon__Release_Checksum__c": null
+}
